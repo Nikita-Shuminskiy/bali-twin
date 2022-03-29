@@ -4,13 +4,6 @@
   min-height: 100vh;
   position: relative;
 }
-
-.container{
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
 .wrapper::after{
   content: '';
   position: absolute;
@@ -21,53 +14,6 @@
   background-color:rgba(4, 4, 32, 0.8);
 }
 
-.connection-card{
-
-  &-inner{
-    display: flex;
-    flex-direction: row;
-  }
-}
-
-.game-page{
-
-  &-disconection-box{
-    z-index: 3;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  &-title{
-    z-index: 1;
-    font-family: 'Rubik';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 120%;
-    color: #FFFFFF;
-  }
-
-  &-disconection{
-    z-index: 1;
-    font-family: 'Rubik';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 120%;
-    text-transform: uppercase;
-    color: #0ACEDB;
-  }
-
-  &-slider{
-    display: flex;
-    overflow: hidden;
-    max-width: 1200px;
-    margin-left: auto;
-  }
-
-  &-connection-card-box{
-    min-height: 500px;
-    margin-right: 24px ;
-  }
+.load-connection-box,.create-connection-box{
+  padding: 60px;
 }
