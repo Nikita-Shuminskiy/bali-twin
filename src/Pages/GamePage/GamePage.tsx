@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
-import styles from './Game.module.scss'
+import styles from './GamePage.module.scss'
 
-export const Game: GamePropsType = () => {
+export const GamePage: React.FC<GamePropsType> = () => {
     useEffect(() => {
         console.log('aaaa')
     }, [])
