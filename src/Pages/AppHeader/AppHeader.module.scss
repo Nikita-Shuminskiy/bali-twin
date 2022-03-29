@@ -10,39 +10,40 @@
     width: 180px;
     height: 19px;
   }
-    .btn-header {
-      max-width: 130px;
-      height: auto;
-      background: rgba(255, 255, 255, 0.12);
-      border: 2px solid rgba(255, 255, 255, 0.12);
-      backdrop-filter: blur(30px);
-      border-radius: 8px;
-      color: #FFFFFF;
-      opacity: 0.4;
-      line-height: 24px;
-      padding: 8px 16px;
-      text-decoration: none;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
 
-    .btn-header:hover {
-      border: 2px solid rgba(128, 128, 128, 0.57);
-      border-radius: 8px;
-      color: #FFFFFF;
-      opacity: 0.9;
-      background: rgba(4, 4, 32, 0.12);
-      box-shadow: 12px 0px 24px rgba(10, 206, 219, 0.16), -12px 0px 24px rgba(255, 26, 177, 0.16);
-    }
+  .btn-header {
+    max-width: 130px;
+    height: auto;
+    background: rgba(255, 255, 255, 0.12);
+    border: 2px solid rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(30px);
+    border-radius: 8px;
+    color: #FFFFFF;
+    opacity: 0.8;
+    line-height: 24px;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn-header:hover {
+    border: 2px solid rgba(128, 128, 128, 0.57);
+    border-radius: 8px;
+    color: #FFFFFF;
+    opacity: 1;
+    background: rgba(4, 4, 32, 0.12);
+    box-shadow: 12px 0px 24px rgba(10, 206, 219, 0.16), -12px 0px 24px rgba(255, 26, 177, 0.16);
+  }
 
   .block-nav {
     .link {
       text-decoration: none;
       letter-spacing: 1px;
-      margin: 0px 32px;
+      margin: 0 32px;
       font-size: 17px;
-      opacity: 0.3;
+      opacity: 0.8;
       color: #FFFFFF;
     }
 
