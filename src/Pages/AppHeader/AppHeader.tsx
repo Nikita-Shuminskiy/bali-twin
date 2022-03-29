@@ -8,7 +8,7 @@ export const AppHeader = () => {
         <div className={styles['container']}>
             <img src={logo} alt="logo-bali-twin" />
             <div className={styles['block-nav']}>
-                <CustomLink className={styles['link']} to="#">
+                <CustomLink className={styles['link']} to="/gamePage">
                     Game
                 </CustomLink>
                 <CustomLink className={styles['link']} to="#">
