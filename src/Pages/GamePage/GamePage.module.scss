@@ -1,0 +1,39 @@
+.wrapper{
+  background-size: cover;
+  background-image: url("bg/bg.png");
+  min-height: 100vh;
+  position: relative;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.wrapper::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color:rgba(4, 4, 32, 0.8);
+}
+
+.connection-card{
+
+  &-inner{
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.game-page-title{
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  color: #FFFFFF;
+}

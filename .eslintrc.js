@@ -1,31 +1,44 @@
 module.exports = {
-  parser: "@typescript-eslint/parser",
-  parserOptions: {
-    project: "tsconfig.json",
-    sourceType: "module",
-    tsconfigRootDir: __dirname,
-  },
-  plugins: ["@typescript-eslint/eslint-plugin"],
-  extends: [
-    "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended",
-  ],
-  root: true,
-  env: {
-    node: true,
-    jest: true,
-  },
-  ignorePatterns: [".eslintrc.js"],
-  rules: {
-    "@typescript-eslint/interface-name-prefix": "off",
-    "@typescript-eslint/explicit-function-return-type": "off",
-    "@typescript-eslint/explicit-module-boundary-types": "off",
-    "@typescript-eslint/no-explicit-any": "off",
-    "prettier/prettier": [
-      "error",
-      {
-        endOfLine: "auto",
-      },
+    env: {
+        browser: true,
+        node: true,
+        amd: true,
+        es2021: true,
+    },
+    extends: [
+        'eslint:recommended',
+        'plugin:react/recommended',
+        'prettier',
+        'prettier/prettier',
+        'plugin:prettier/recommended',
     ],
-  },
-};
+    parser: '@typescript-eslint/parser',
+    parserOptions: {
+        ecmaFeatures: {
+            jsx: true,
+        },
+        ecmaVersion: 12,
+        sourceType: 'module',
+    },
+    plugins: ['react', '@typescript-eslint'],
+    rules: {
+        'react/prop-types': 'off',
+        'react/display-name': 'off',
+        'react/react-in-jsx-scope': 'off',
+        'no-empty-pattern': 'off',
+        'no-debugger': 'off',
+        'no-undef': 'off',
+        'no-unused-vars': 'off',
+        'prettier/prettier': [
+            'error',
+            {
+                endOfLine: 'auto',
+            },
+        ],
+    },
+    settings: {
+        react: {
+            version: 'detect',
+        },
+    },
+}
