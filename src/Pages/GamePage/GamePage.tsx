@@ -1,17 +1,10 @@
-import React, { useEffect } from 'react'
-import styles from './GamePage.module.scss'
+import React from 'react'
+import styles from '../../scss/GamePage.module.scss'
 
 export const GamePage: React.FC<GamePropsType> = () => {
-    useEffect(() => {
-        console.log('aaaa')
-    }, [])
-    return (
-        <div className={styles['main']}>
-            <div className={styles['main-card']}>asdfasdf</div>
-        </div>
-    )
+    const arrayConections = []
+    return <div className={styles['wrapper']}></div>
 }
 
-interface GamePropsType {
-    name: string
-}
+// eslint-disable-next-line @typescript-eslint/no-empty-interface
+interface GamePropsType {}
