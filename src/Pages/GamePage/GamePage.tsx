@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from './GamePage.module.scss'
 import './slider.css'
-import Slider from 'react-slick'
 import {
     ConnectionCard,
     ConnectionTypeCard,
@@ -60,32 +59,35 @@ export const GamePage: React.FC<GamePropsType> = () => {
         },
     ]
 
-    const settings = {
-        speed: 500,
-        arrows: false,
-        slidesToShow: 5,
-        swipeToSlide: true,
-    }
-
     return (
         <div className={styles['wrapper']}>
             <div className={styles['container']}>
-                <h3 className={styles['game-page-title']}>Load connection</h3>
-                <Slider {...settings}>
-                    {arrayConnections.map((card, index) => {
-                        return (
-                            <div key={index} style={{ marginRight: '20px' }}>
-                                <ConnectionCard
-                                    date={card.date}
-                                    type={card.type}
-                                    typeButton={card.typeButton}
-                                    srcImg={card.srcImg}
-                                    title={card.title}
-                                />
-                            </div>
-                        )
-                    })}
-                </Slider>
+                <div className={styles['game-page-disconection-box']}>
+                    <h3 className={styles['game-page-title']}>
+                        Load connection
+                    </h3>
+                    <h3 className={styles['game-page-disconection']}>
+                        Disconnect all
+                    </h3>
+                </div>
+            </div>
+            <div className={styles['game-page-slider']}>
+                {arrayConnections.map((card, index) => {
+                    return (
+                        <div
+                            key={index}
+                            className={styles['game-page-connection-card-box']}
+                        >
+                            <ConnectionCard
+                                date={card.date}
+                                type={card.type}
+                                typeButton={card.typeButton}
+                                srcImg={card.srcImg}
+                                title={card.title}
+                            />
+                        </div>
+                    )
+                })}
             </div>
         </div>
     )
