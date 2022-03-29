@@ -1,0 +1,138 @@
+.container {
+  background: linear-gradient(0deg, rgba(4, 4, 32, 0.24), rgba(4, 4, 32, 0.24)), radial-gradient(74.81% 74.81% at 50% 50%, rgba(4, 4, 32, 0) 0%, #040420 100%), url("backdrop-forest.png");
+  width: 100%;
+  height: 800px;
+  background-size: cover;
+  z-index: 1;
+  backdrop-filter: blur(4px);
+
+  .background-pink {
+    min-width: 1200px;
+    height: 88vh;
+    background: #FF1AB1;
+    mix-blend-mode: overlay;
+    opacity: 0.6;
+    filter: blur(24px);
+    position: absolute;
+    left: 0;
+    top: 72px;
+    z-index: 2;
+  }
+
+  .background-blue {
+    position: absolute;
+    min-width: 713px;
+    height: 88vh;
+    background: #1A91FF;
+    mix-blend-mode: overlay;
+    opacity: 0.8;
+    filter: blur(300px);
+    top: 72px;
+    right: 0;
+    z-index: 2;
+  }
+
+  .logo-block {
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+
+    img {
+      mix-blend-mode: lighten;
+    }
+
+    .back-top {
+      content: '';
+      position: absolute;
+      top: 266px;
+      width: 50%;
+      max-width: 911px;
+      height: 64px;
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.0972) 50%, rgba(255, 255, 255, 0) 100%);
+
+    }
+
+    .back-down {
+      content: '';
+      position: absolute;
+      top: 345px;
+      width: 50%;
+      max-width: 911px;
+      height: 64px;
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.0972) 50%, rgba(255, 255, 255, 0) 100%);
+    }
+  }
+
+  .logo-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.btnThree {
+  color: #FFF;
+  transition: all 0.5s;
+  position: relative;
+}
+
+.box3 {
+  width: 280px;
+  z-index: 999;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.0768) 0%, rgba(255, 255, 255, 0) 20.83%, rgba(255, 255, 255, 0) 80.73%, rgba(255, 255, 255, 0.0768) 100%);
+}
+
+.btn {
+  font-family: 'Rubik';
+  color: #FFFFFF;
+  text-shadow: 0px 0px 12px rgba(255, 255, 255, 0.64);
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+  align-self: stretch;
+  font-size: 18px;
+}
+
+.frostedGlass {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.0768) 0%, rgba(255, 255, 255, 0) 20.83%, rgba(255, 255, 255, 0) 80.73%, rgba(255, 255, 255, 0.0768) 100%);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.frostedGlass:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 2000px rgba(241, 241, 241, 0.5);
+  backdrop-filter: blur(3px);
+  margin: -20px;
+}
+.textBtn:after{
+  width: 45px;
+  height: 4px ;
+  background: #FFFFFF;
+  opacity: 0.56;
+  border-radius: 100px;
+  transform: rotate(90deg);
+}
+.btn-line-left{
+  width: 45px;
+  height: 4px ;
+  background: #FFFFFF;
+  opacity: 0.56;
+  border-radius: 100px;
+  transform: rotate(90deg);
+}
+.btn-line-right{
+  width: 45px;
+  height: 4px ;
+  background: #FFFFFF;
+  opacity: 0.56;
+  border-radius: 100px;
+  transform: rotate(90deg);
+}
