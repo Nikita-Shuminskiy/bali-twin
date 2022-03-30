@@ -1,5 +1,5 @@
 import React from 'react'
-import { CustomLink } from '../../Compmonent/CustomLink/CustomLink'
+import { CustomLink } from '../../Components/CustomLink/CustomLink'
 import logo from '../../Images/logo-twin.png'
 import styles from './AppHeader.module.scss'
 import { PATH } from '../../Router/PATH/PATH'
