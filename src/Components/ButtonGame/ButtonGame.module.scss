@@ -6,13 +6,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(255, 255, 255, 0.12);
+  //background: rgba(255, 255, 255, 0.12);
+  background: rgba(4, 4, 32, 0.4);
   backdrop-filter: blur(30px);
   cursor: pointer;
-  &-active{
-    box-shadow: 12px 0px 24px rgba(10, 206, 219, 0.16), -12px 0px 24px rgba(255, 26, 177, 0.16);
-  }
-
   &-text{
     font-family: 'Rubik';
     font-style: normal;
@@ -23,8 +20,30 @@
     color: #FFFFFF;
     padding: 8px 24px;
   }
+}
 
-  &-active-text{
+.button-text-error {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #FF1AB1;
+}
+
+.button-error{
+  background: rgba(4, 4, 32, 0.4);
+}
+
+.button-error:hover{
+  background: rgba(82, 13, 59, 0.4);
+  box-shadow: 12px 0px 24px rgba(255, 26, 177, 0.16), -12px 0px 24px rgba(255, 26, 177, 0.16);
+}
+
+.button-active:hover{
+    box-shadow: 12px 0px 24px rgba(10, 206, 219, 0.16), -12px 0px 24px rgba(255, 26, 177, 0.16);
+}
+
+.button-active:hover .button-text{
     opacity: 1;
-  }
 }
