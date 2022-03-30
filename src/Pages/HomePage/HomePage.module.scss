@@ -131,7 +131,7 @@
   .logo-block:before {
     content: '';
     position: absolute;
-    z-index: 9999;
+    z-index: 3;
     top: 85px;
     left: 24px;
     right: 0;
@@ -140,14 +140,14 @@
     background: #FF1AB1;
     mix-blend-mode: overlay;
     opacity: 0.4;
-    filter: blur(300px);
+    filter: blur(250px);
     max-width: 737px;
   }
 
   .logo-block:after {
     content: '';
     position: absolute;
-    z-index: 9999;
+    z-index: 3;
     top: 129px;
     right: 19px;
     bottom: 0;
@@ -157,7 +157,7 @@
     background: #1A91FF;
     mix-blend-mode: overlay;
     opacity: 0.6;
-    filter: blur(300px);
+    filter: blur(250px);
   }
 }
 
@@ -171,7 +171,7 @@
   position: relative;
   bottom: 50px;
   width: 280px;
-  z-index: 999;
+  z-index: -1;
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.0768) 0%, rgba(255, 255, 255, 0) 20.83%, rgba(255, 255, 255, 0) 80.73%, rgba(255, 255, 255, 0.0768) 100%);
 }
 

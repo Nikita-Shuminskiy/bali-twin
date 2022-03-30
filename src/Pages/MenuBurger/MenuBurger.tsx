@@ -34,12 +34,12 @@ export const MenuBurger = () => {
                         Docs
                     </a>
                 </li>
+                <div className="menu__block-btn">
+                    <a href="#" className="btn-header">
+                        Connect wallet
+                    </a>
+                </div>
             </ul>
-            <div>
-                <a href="#" className={'btn-header'}>
-                    Connect wallet
-                </a>
-            </div>
         </div>
     )
 }
