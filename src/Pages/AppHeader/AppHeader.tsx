@@ -7,7 +7,7 @@ export const AppHeader = () => {
     return (
         <div className={styles['container']}>
             <img src={logo} alt="logo-bali-twin" />
-            <div className={styles['block-nav']}>
+            <div className={`${styles['block-nav']}`}>
                 <CustomLink className={styles['link']} to="/gamePage">
                     Game
                 </CustomLink>
