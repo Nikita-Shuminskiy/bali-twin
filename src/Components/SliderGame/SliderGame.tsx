@@ -9,13 +9,15 @@ export const SliderGame: React.FC<SliderGamePropsType> = ({
     const sliderSettings = settings
         ? settings
         : {
-              arrows: false,
               speed: 500,
               slidesToShow: 5,
               slidesToScroll: 5,
               rows: 1,
               initialSlide: 0,
               infinite: true,
+              dots: false,
+              arrows: false,
+              adaptiveHeight: true,
               responsive: [
                   {
                       breakpoint: 1310,
@@ -23,7 +25,9 @@ export const SliderGame: React.FC<SliderGamePropsType> = ({
                           slidesToShow: 4,
                           slidesToScroll: 4,
                           infinite: true,
-                          dots: true,
+                          adaptiveHeight: true,
+                          dots: false,
+                          arrows: false,
                       },
                   },
                   {
@@ -31,8 +35,10 @@ export const SliderGame: React.FC<SliderGamePropsType> = ({
                       settings: {
                           slidesToShow: 3,
                           slidesToScroll: 3,
+                          adaptiveHeight: true,
                           infinite: true,
-                          dots: true,
+                          dots: false,
+                          arrows: false,
                       },
                   },
                   {
@@ -40,12 +46,16 @@ export const SliderGame: React.FC<SliderGamePropsType> = ({
                       settings: {
                           slidesToShow: 2,
                           slidesToScroll: 2,
+                          adaptiveHeight: true,
+                          dots: false,
+                          arrows: false,
                       },
                   },
                   {
-                      breakpoint: 480,
+                      breakpoint: 664,
                       settings: {
                           infinite: true,
+                          adaptiveHeight: true,
                           slidesToShow: 1,
                           slidesToScroll: 1,
                       },

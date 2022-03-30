@@ -6,7 +6,6 @@ export const ConnectionCard: React.FC<ConnectionCardPropsType> = ({
     type,
     date,
     srcImg,
-    typeButton = 'none',
 }) => {
     const buttonText = {
         newConnection: 'Create',
@@ -97,7 +96,11 @@ export const ConnectionCard: React.FC<ConnectionCardPropsType> = ({
                     {type === 'newConnection' ? 'Create new connection' : date}
                 </p>
             </div>
-            <ButtonGame buttonText={buttonText[type]} type={typeButton} />
+            <div className={styles['button']}>
+                <span className={styles['button-text']}>
+                    {buttonText[type]}
+                </span>
+            </div>
         </div>
     )
 }

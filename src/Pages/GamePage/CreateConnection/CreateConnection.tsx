@@ -17,23 +17,20 @@ export const CreateConnection = () => {
         {
             title: 'Bali Twin',
             srcImg: imgCard,
-            typeButton: 'active',
             date: `${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}`,
-            type: 'loadingGame',
+            type: 'createGame',
         },
         {
             title: 'Bali Twin',
             srcImg: imgCard,
-            typeButton: 'none',
             date: `${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}`,
-            type: 'loadingGame',
+            type: 'createGame',
         },
         {
             title: 'Bali Twin',
             srcImg: imgCard,
-            typeButton: 'none',
             date: `${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}`,
-            type: 'loadingGame',
+            type: 'createGame',
         },
     ]
 
@@ -46,46 +43,24 @@ export const CreateConnection = () => {
                     </h3>
                 </div>
             </div>
-            {arrayConnections.length >= 5 ? (
-                <SliderGame>
-                    {arrayConnections.map((card, index) => {
-                        return (
-                            <div key={index}>
-                                <ConnectionCard
-                                    date={card.date}
-                                    type={card.type}
-                                    typeButton={card.typeButton}
-                                    srcImg={card.srcImg}
-                                    title={card.title}
-                                />
-                            </div>
-                        )
-                    })}
-                </SliderGame>
-            ) : (
-                <div className={styles['container']}>
-                    <div className={styles['game-page-connection-cards-inner']}>
-                        {arrayConnections.map((card, index) => {
-                            return (
-                                <div
-                                    key={index}
-                                    className={
-                                        styles['game-page-connection-card-box']
-                                    }
-                                >
-                                    <ConnectionCard
-                                        date={card.date}
-                                        type={card.type}
-                                        typeButton={card.typeButton}
-                                        srcImg={card.srcImg}
-                                        title={card.title}
-                                    />
-                                </div>
-                            )
-                        })}
-                    </div>
-                </div>
-            )}
+            <SliderGame>
+                {arrayConnections.map((card, index) => {
+                    return (
+                        <div
+                            key={index}
+                            className={styles['game-page-connection-card-box']}
+                        >
+                            <ConnectionCard
+                                date={card.date}
+                                type={card.type}
+                                typeButton={card.typeButton}
+                                srcImg={card.srcImg}
+                                title={card.title}
+                            />
+                        </div>
+                    )
+                })}
+            </SliderGame>
         </>
     )
 }

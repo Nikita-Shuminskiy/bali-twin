@@ -1,5 +1,4 @@
 .button{
-  position: absolute;
   max-width: 132px;
   width: max-content;
   height: 40px;
@@ -9,10 +8,7 @@
   align-items: center;
   background: rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(30px);
-  bottom: -16px;
-  left: 50%;
   cursor: pointer;
-  transform: translateX(-50%);
   &-active{
     box-shadow: 12px 0px 24px rgba(10, 206, 219, 0.16), -12px 0px 24px rgba(255, 26, 177, 0.16);
   }
