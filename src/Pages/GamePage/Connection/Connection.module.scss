@@ -53,9 +53,11 @@
 
   &-connection-cards-inner{
     display: flex;
+    flex-wrap: wrap;
   }
 
   &-connection-card-box{
-    margin-right: 24px ;
+    margin-bottom: 50px;
+    margin-right: 20px;
   }
 }

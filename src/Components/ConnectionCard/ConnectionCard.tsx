@@ -1,13 +1,12 @@
 import React from 'react'
 import styles from './ConnectionCard.module.scss'
-import { ButtonGame } from '../ButtonGame/ButtonGame'
+import { CardType } from '../../Pages/GamePage/GamePage'
 export const ConnectionCard: React.FC<ConnectionCardPropsType> = ({
-    title,
-    type,
-    date,
-    srcImg,
-    typeButton = 'none',
+    card,
+    callback,
+    disconnectGameCallback,
 }) => {
+    const { type, title, date, srcImg, id } = card
     const buttonText = {
         newConnection: 'Create',
         createGame: 'Create game',
@@ -25,7 +24,10 @@ export const ConnectionCard: React.FC<ConnectionCardPropsType> = ({
                     />
                 ) : (
                     <div className={styles['card-connection-inner']}>
-                        <div className={styles['card-connection-icon']}>
+                        <div
+                            onClick={callback}
+                            className={styles['card-connection-icon']}
+                        >
                             <svg
                                 width="80"
                                 height="80"
@@ -97,7 +99,19 @@ export const ConnectionCard: React.FC<ConnectionCardPropsType> = ({
                     {type === 'newConnection' ? 'Create new connection' : date}
                 </p>
             </div>
-            <ButtonGame buttonText={buttonText[type]} type={typeButton} />
+            <div className={styles['button']} onClick={() => callback()}>
+                <span className={styles['button-text']}>
+                    {buttonText[type]}
+                </span>
+                {type === 'loadingGame' && (
+                    <span
+                        onClick={disconnectGameCallback}
+                        className={styles['button-disconnect']}
+                    >
+                        Disconnect
+                    </span>
+                )}
+            </div>
         </div>
     )
 }
@@ -105,9 +119,7 @@ export const ConnectionCard: React.FC<ConnectionCardPropsType> = ({
 export type ConnectionTypeCard = 'newConnection' | 'createGame' | 'loadingGame'
 
 interface ConnectionCardPropsType {
-    type: ConnectionTypeCard
-    date?: string
-    title?: string
-    srcImg?: string
-    typeButton?: 'active' | 'none'
+    callback: () => void
+    card: CardType
+    disconnectGameCallback?: () => void
 }

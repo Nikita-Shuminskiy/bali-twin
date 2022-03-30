@@ -3,6 +3,7 @@
   background-image: url("bg/bg.png");
   min-height: 100vh;
   position: relative;
+  overflow: hidden;
 }
 .wrapper::after{
   content: '';
@@ -15,5 +16,5 @@
 }
 
 .load-connection-box,.create-connection-box{
-  padding: 60px;
+
 }
