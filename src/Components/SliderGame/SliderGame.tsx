@@ -14,7 +14,7 @@ export const SliderGame: React.FC<SliderGamePropsType> = ({
               slidesToScroll: 5,
               rows: 1,
               initialSlide: 0,
-              infinite: true,
+              infinite: false,
               dots: false,
               arrows: false,
               adaptiveHeight: true,
@@ -24,7 +24,7 @@ export const SliderGame: React.FC<SliderGamePropsType> = ({
                       settings: {
                           slidesToShow: 4,
                           slidesToScroll: 4,
-                          infinite: true,
+                          infinite: false,
                           adaptiveHeight: true,
                           dots: false,
                           arrows: false,
@@ -36,7 +36,7 @@ export const SliderGame: React.FC<SliderGamePropsType> = ({
                           slidesToShow: 3,
                           slidesToScroll: 3,
                           adaptiveHeight: true,
-                          infinite: true,
+                          infinite: false,
                           dots: false,
                           arrows: false,
                       },
@@ -54,7 +54,7 @@ export const SliderGame: React.FC<SliderGamePropsType> = ({
                   {
                       breakpoint: 541,
                       settings: {
-                          infinite: true,
+                          infinite: false,
                           adaptiveHeight: true,
                           slidesToShow: 1,
                           slidesToScroll: 1,

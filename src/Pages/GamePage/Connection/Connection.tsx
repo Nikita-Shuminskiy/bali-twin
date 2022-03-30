@@ -5,6 +5,7 @@ import {
     ConnectionCard,
     ConnectionTypeCard,
 } from '../../../Components/ConnectionCard/ConnectionCard'
+import { CardType } from '../GamePage'
 
 export interface TypeCard {
     type: ConnectionTypeCard
@@ -14,6 +15,9 @@ export const Connection: React.FC<ConnectionPropsType> = ({
     arrayConnections,
     type,
     title,
+    callback,
+    disconnectGameCallback,
+    disconnectAllCallback,
 }) => {
     return (
         <>
@@ -21,25 +25,30 @@ export const Connection: React.FC<ConnectionPropsType> = ({
                 <div className={styles['game-page-disconection-box']}>
                     <h3 className={styles['game-page-title']}>{title}</h3>
                     {type === 'Load' ? (
-                        <h3 className={styles['game-page-disconection']}>
+                        <h3
+                            onClick={disconnectAllCallback}
+                            className={styles['game-page-disconection']}
+                        >
                             Disconnect all
                         </h3>
                     ) : null}
                 </div>
             </div>
             <SliderGame>
-                {arrayConnections.map((card, index) => {
+                {arrayConnections.map((card) => {
                     return (
                         <div
-                            key={index}
+                            key={card.id}
                             className={styles['game-page-connection-card-box']}
                         >
                             <ConnectionCard
-                                date={card.date}
-                                type={card.type}
-                                typeButton={card.typeButton}
-                                srcImg={card.srcImg}
-                                title={card.title}
+                                disconnectGameCallback={() =>
+                                    disconnectGameCallback(card.id)
+                                }
+                                callback={() => {
+                                    callback(card.id, card.type)
+                                }}
+                                card={card}
                             />
                         </div>
                     )
@@ -50,7 +59,10 @@ export const Connection: React.FC<ConnectionPropsType> = ({
 }
 
 interface ConnectionPropsType {
-    arrayConnections: Array<any | TypeCard>
+    arrayConnections: Array<CardType>
     type: 'Load' | 'Create'
     title: string
+    disconnectAllCallback?: () => void
+    callback: (id: string, type: ConnectionTypeCard) => void
+    disconnectGameCallback: (id: string) => void
 }
