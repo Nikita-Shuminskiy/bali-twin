@@ -7,7 +7,9 @@ import { PATH } from '../../Router/PATH/PATH'
 export const AppHeader = () => {
     return (
         <div className={styles['container']}>
-            <img src={logo} alt="logo-bali-twin" />
+            <CustomLink className={styles['link']} to={PATH.HOME}>
+                <img src={logo} alt="logo-bali-twin" />
+            </CustomLink>
             <div className={styles['block-nav']}>
                 <CustomLink className={styles['link']} to={PATH.GAME}>
                     Game

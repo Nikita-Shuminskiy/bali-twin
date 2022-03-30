@@ -8,7 +8,15 @@ const RoutMap = () => {
     return (
         <Routes>
             <Route path={PATH.HOME} element={<HomePage />} />
-            <Route path={PATH.GAME} element={<GamePage />} />
+            <Route
+                path={PATH.GAME}
+                element={
+                    <>
+                        <HomePage />
+                        <GamePage />
+                    </>
+                }
+            />
         </Routes>
     )
 }
