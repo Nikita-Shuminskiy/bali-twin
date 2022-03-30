@@ -52,7 +52,7 @@ export const SliderGame: React.FC<SliderGamePropsType> = ({
                       },
                   },
                   {
-                      breakpoint: 664,
+                      breakpoint: 541,
                       settings: {
                           infinite: true,
                           adaptiveHeight: true,

@@ -1,46 +1,30 @@
 import React from 'react'
-import styles from './CreateConnection.module.scss'
+import styles from './Connection.module.scss'
 import { SliderGame } from '../../../Components/SliderGame/SliderGame'
 import {
     ConnectionCard,
     ConnectionTypeCard,
 } from '../../../Components/ConnectionCard/ConnectionCard'
-import imgCard from '../../../Components/ConnectionCard/mock/card-img.jpg'
 
-interface TypeCard {
+export interface TypeCard {
     type: ConnectionTypeCard
-    typeButton: 'active' | 'none'
 }
 
-export const CreateConnection = () => {
-    const arrayConnections: Array<any | TypeCard> = [
-        {
-            title: 'Bali Twin',
-            srcImg: imgCard,
-            date: `${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}`,
-            type: 'createGame',
-        },
-        {
-            title: 'Bali Twin',
-            srcImg: imgCard,
-            date: `${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}`,
-            type: 'createGame',
-        },
-        {
-            title: 'Bali Twin',
-            srcImg: imgCard,
-            date: `${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}`,
-            type: 'createGame',
-        },
-    ]
-
+export const Connection: React.FC<ConnectionPropsType> = ({
+    arrayConnections,
+    type,
+    title,
+}) => {
     return (
         <>
             <div className={styles['container']}>
                 <div className={styles['game-page-disconection-box']}>
-                    <h3 className={styles['game-page-title']}>
-                        Create connection
-                    </h3>
+                    <h3 className={styles['game-page-title']}>{title}</h3>
+                    {type === 'Load' ? (
+                        <h3 className={styles['game-page-disconection']}>
+                            Disconnect all
+                        </h3>
+                    ) : null}
                 </div>
             </div>
             <SliderGame>
@@ -63,4 +47,10 @@ export const CreateConnection = () => {
             </SliderGame>
         </>
     )
+}
+
+interface ConnectionPropsType {
+    arrayConnections: Array<any | TypeCard>
+    type: 'Load' | 'Create'
+    title: string
 }
