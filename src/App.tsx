@@ -6,6 +6,7 @@ import { AppHeader } from './Pages/AppHeader/AppHeader'
 export const App = () => {
     return (
         <>
+            <AppHeader />
             <RoutMap />
         </>
     )
