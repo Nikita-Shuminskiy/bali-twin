@@ -12,7 +12,7 @@ const RoutMap = () => {
             <AppHeader />
             <Routes>
                 <Route
-                    path={PATH.HOME || PATH.MAIN}
+                    path={PATH.MAIN || PATH.HOME}
                     element={
                         <>
                             <HomePage />
