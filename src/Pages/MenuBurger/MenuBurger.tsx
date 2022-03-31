@@ -1,4 +1,6 @@
 import React from 'react'
+import { CustomLink } from '../../../src/Components/CustomLink/CustomLink'
+import { PATH } from '../../../src/Router/PATH/PATH'
 import './MenuBurger.scss'
 
 export const MenuBurger = () => {
@@ -10,34 +12,34 @@ export const MenuBurger = () => {
             </label>
             <ul className="menu__box">
                 <li>
-                    <a className="menu__item" href="#">
+                    <CustomLink className={'menu__item'} to={PATH.GAME}>
                         Game
-                    </a>
+                    </CustomLink>
                 </li>
                 <li>
-                    <a className="menu__item" href="#">
+                    <CustomLink className="menu__item" to="#">
                         Collection
-                    </a>
+                    </CustomLink>
                 </li>
                 <li>
-                    <a className="menu__item" href="#">
+                    <CustomLink className="menu__item" to="#">
                         Marketplace
-                    </a>
+                    </CustomLink>
                 </li>
                 <li>
-                    <a className="menu__item" href="#">
+                    <CustomLink className="menu__item" to="#">
                         Jobs
-                    </a>
+                    </CustomLink>
                 </li>
                 <li>
-                    <a className="menu__item" href="#">
+                    <CustomLink className="menu__item" to="#">
                         Docs
-                    </a>
+                    </CustomLink>
                 </li>
                 <div className="menu__block-btn">
-                    <a href="#" className="btn-header">
+                    <CustomLink to="#" className="btn">
                         Connect wallet
-                    </a>
+                    </CustomLink>
                 </div>
             </ul>
         </div>

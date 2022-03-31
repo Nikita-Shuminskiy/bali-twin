@@ -8,17 +8,30 @@ export const HomePage = () => {
     return (
         <div className={styles['container']}>
             <MenuBurger />
+            <AppHeader />
             <div className={styles['logo-block']}>
-                <span className={`${styles['line']} ${styles['line-1']}`} />
-                <span className={`${styles['line']} ${styles['line-2']}`} />
-                <span className={`${styles['line']} ${styles['line-3']}`} />
-                <div className={styles['setting-logo']}>
-                    <div className={styles['back-top']} />
+                <div>
+                    <div className={styles['setting-logo']}>
+                        <span
+                            className={`${styles['line']} ${styles['line-1']}`}
+                        />
+                        <span
+                            className={`${styles['line']} ${styles['line-2']}`}
+                        />
+                        <span
+                            className={`${styles['line']} ${styles['line-3']}`}
+                        />
+                        <div className={styles['back-top']} />
+                        <div className={styles['back-down']} />
+                        <span
+                            className={`${styles['line']} ${styles['line-4']}`}
+                        />
+                        <span
+                            className={`${styles['line']} ${styles['line-5']}`}
+                        />
+                    </div>
                     <img src={logoHome} alt="logo-home" />
-                    <div className={styles['back-down']} />
                 </div>
-                <span className={`${styles['line']} ${styles['line-4']}`} />
-                <span className={`${styles['line']} ${styles['line-5']}`} />
                 <div className={`${styles['box']}`}>
                     <span className={styles['btn-line-left']} />
                     <div
