@@ -8,7 +8,6 @@ export const HomePage = () => {
     return (
         <div className={styles['container']}>
             <MenuBurger />
-            <AppHeader />
             <div className={styles['logo-block']}>
                 <span className={`${styles['line']} ${styles['line-1']}`} />
                 <span className={`${styles['line']} ${styles['line-2']}`} />
