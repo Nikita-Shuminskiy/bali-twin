@@ -10,7 +10,7 @@ export const MenuBurger = () => {
             <label className="menu__btn" htmlFor="menu__toggle">
                 <span></span>
             </label>
-            <ul className="menu__box">
+            <ul className="frosted-glass menu__box">
                 <li>
                     <CustomLink className={'menu__item'} to={PATH.GAME}>
                         Game
