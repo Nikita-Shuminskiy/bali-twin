@@ -144,7 +144,6 @@
     width: 312px;
     height: 46px;
   }
-
   #menu__toggle:checked ~ .menu__btn > span {
     transform: rotate(45deg);
   }
@@ -160,6 +159,7 @@
   }
 
   #menu__toggle:checked ~ .menu__box {
+/*    transform: translateX(-110vw);*/
     visibility: visible;
     left: 0;
   }

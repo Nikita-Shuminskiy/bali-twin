@@ -170,10 +170,14 @@
 }
 
 .box {
+  bottom: 30px;
   position: relative;
   width: 280px;
   z-index: -1;
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.0768) 0%, rgba(255, 255, 255, 0) 20.83%, rgba(255, 255, 255, 0) 80.73%, rgba(255, 255, 255, 0.0768) 100%);
+  @media (max-width: 400px) {
+    bottom: 0;
+  }
 }
 
 .btn {
