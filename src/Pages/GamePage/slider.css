@@ -7,7 +7,7 @@
 }
 
 
-@media (max-width: 440px) {
+@media (max-width: 500px) {
     .slick-current{
         width: max-content !important;
     }
