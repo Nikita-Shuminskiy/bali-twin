@@ -35,7 +35,7 @@ export const MenuBurger = () => {
                     </a>
                 </li>
                 <div className="menu__block-btn">
-                    <a href="#" className="btn-header">
+                    <a href="#" className="btn">
                         Connect wallet
                     </a>
                 </div>

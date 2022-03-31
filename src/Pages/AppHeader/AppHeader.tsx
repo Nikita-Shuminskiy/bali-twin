@@ -1,8 +1,8 @@
 import React from 'react'
 import { CustomLink } from '../../Compmonent/CustomLink/CustomLink'
 import logo from '../../Images/logo-twin.png'
-import styles from './AppHeader.module.scss'
 import { PATH } from '../../Router/PATH/PATH'
+import styles from './AppHeader.module.scss'
 
 export const AppHeader = () => {
     return (

@@ -8,7 +8,7 @@
     display: flex;
     align-items: center;
     position: fixed;
-    top: 51px;
+    top: 42px;
     width: 35px;
     height: 29px;
     cursor: pointer;
@@ -23,7 +23,7 @@
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: #616161;
+    background-color: #FFFFFF;
   }
 
   .menu__btn > span::after {
@@ -45,8 +45,7 @@
     right: 0;
     bottom: 0;
     z-index: -1;
-    backdrop-filter: blur(3px);
-    margin: -20px;
+    backdrop-filter: initial;
   }
 
   .menu__box {
@@ -117,7 +116,6 @@
   .menu__item {
     display: block;
     padding: 12px 24px;
-    font-family: 'Rubik';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -175,10 +173,7 @@
   }
 
   .menu__block-btn {
-    position: relative;
-    width: 190%;
-    height: 3%;
-    .btn-header {
+    .btn {
       max-width: 130px;
       height: auto;
       background: rgba(255, 255, 255, 0.12);
@@ -193,13 +188,10 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      position: absolute;
       z-index: 999;
-      right: 45.5%;
-      top: 70%;
     }
 
-    .btn-header:hover {
+    .btn:hover {
       border: 2px solid rgba(128, 128, 128, 0.57);
       border-radius: 8px;
       color: #FFFFFF;
@@ -211,8 +203,8 @@
   }
 }
 
-@media (min-width: 800px){
-  .hamburger-menu{
+@media (min-width: 1067px) {
+  .hamburger-menu {
     display: none;
   }
 }
