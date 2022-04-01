@@ -127,7 +127,7 @@ export const GamePage: React.FC<GamePropsType> = () => {
     }
 
     return (
-        <>
+        <div id={'game'}>
             <div className={styles['wrapper']}>
                 <div className={styles['load-connection-box']}>
                     <Connection
@@ -154,7 +154,7 @@ export const GamePage: React.FC<GamePropsType> = () => {
                 callBack={disconnectAllCallback}
                 closeCallback={closeDisconnectModal}
             />
-        </>
+        </div>
     )
 }
 

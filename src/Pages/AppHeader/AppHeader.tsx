@@ -1,12 +1,14 @@
 import React from 'react'
 import { CustomLink } from '../../Components/CustomLink/CustomLink'
 import logo from '../../Images/logo-twin.png'
+import { MenuBurger } from '../../Pages/MenuBurger/MenuBurger'
 import { PATH } from '../../Router/PATH/PATH'
 import styles from './AppHeader.module.scss'
 
 export const AppHeader = () => {
     return (
         <div className={styles['container']}>
+            <MenuBurger />
             <CustomLink className={styles['link']} to={PATH.HOME}>
                 <img src={logo} alt="logo-bali-twin" />
             </CustomLink>

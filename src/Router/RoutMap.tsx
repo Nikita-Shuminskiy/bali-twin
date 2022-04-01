@@ -1,23 +1,28 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import { HomePage } from '../Pages/HomePage/HomePage'
+import { AppHeader } from '../Pages/AppHeader/AppHeader'
 import { GamePage } from '../Pages/GamePage/GamePage'
+import { HomePage } from '../Pages/HomePage/HomePage'
 import { PATH } from './PATH/PATH'
 
 const RoutMap = () => {
     return (
-        <Routes>
-            <Route path={PATH.HOME} element={<HomePage />} />
-            <Route
-                path={PATH.GAME}
-                element={
-                    <>
-                        <HomePage />
-                        <GamePage />
-                    </>
-                }
-            />
-        </Routes>
+        <>
+            <AppHeader />
+            <Routes>
+                <Route path={PATH.HOME} element={<HomePage />} />
+                <Route path={PATH.MAIN || PATH.HOME} element={<HomePage />} />
+                <Route
+                    path={PATH.GAME}
+                    element={
+                        <>
+                            <HomePage />
+                            <GamePage />
+                        </>
+                    }
+                />
+            </Routes>
+        </>
     )
 }
 

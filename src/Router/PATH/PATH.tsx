@@ -1,4 +1,5 @@
 export const PATH = {
     HOME: '/',
-    GAME: 'game',
+    GAME: '/game',
+    MAIN: 'bali-twin',
 }
