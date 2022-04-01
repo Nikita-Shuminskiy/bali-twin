@@ -13,6 +13,7 @@
     url("back-forest-mobile.png") no-repeat;
     background-size: cover;
   }
+
   .logo-block {
     z-index: 999;
     display: flex;
@@ -23,6 +24,7 @@
     @media (max-width: 420px) {
       justify-content: center;
     }
+
     .line {
       content: '';
       position: absolute;
@@ -117,11 +119,12 @@
       color: #FFFFFF;
       opacity: 0.9;
       @media (max-width: 1067px) {
-      display: none;
+        display: none;
       }
     }
+
     @media (max-width: 1067px) {
-      .setting-logo{
+      .setting-logo {
         position: relative;
         bottom: 139px;
         width: 235%;
