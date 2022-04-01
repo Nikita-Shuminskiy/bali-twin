@@ -1,7 +1,5 @@
 import React from 'react'
 import logoHome from '../../Images/Logo-home.png'
-import { AppHeader } from '../AppHeader/AppHeader'
-import { MenuBurger } from '../MenuBurger/MenuBurger'
 import styles from './HomePage.module.scss'
 
 export const HomePage = () => {
