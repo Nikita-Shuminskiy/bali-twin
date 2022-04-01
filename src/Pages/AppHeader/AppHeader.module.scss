@@ -81,8 +81,14 @@
       z-index: 9999;
     }
 
-    .link:hover:after,
-    .link:focus:after {
+    .link:hover:after{
+      -webkit-box-shadow: 1px -18px 47px 30px rgba(255, 255, 255, 0.41);
+      -moz-box-shadow: 1px -18px 47px 30px rgba(255, 255, 255, 0.41);
+      box-shadow: 1px -18px 47px 30px rgba(255, 255, 255, 0.41);
+      width: 110%;
+    }
+
+    .link.active:after{
       -webkit-box-shadow: 1px -18px 47px 30px rgba(255, 255, 255, 0.41);
       -moz-box-shadow: 1px -18px 47px 30px rgba(255, 255, 255, 0.41);
       box-shadow: 1px -18px 47px 30px rgba(255, 255, 255, 0.41);
