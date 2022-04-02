@@ -60,6 +60,11 @@
   }
 
   .block-nav {
+    display: flex;
+    align-items: center;
+    max-width: 457px;
+    width: 100%;
+    justify-content: space-between;
     .link {
       font-family: 'Rubik';
       font-style: normal;
@@ -71,7 +76,6 @@
       color: #FFFFFF;
       cursor: pointer;
       text-decoration: none;
-      margin: 0 32px;
     }
 
     .link.active:before {
