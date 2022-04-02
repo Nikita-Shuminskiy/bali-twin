@@ -29,6 +29,9 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    @media (max-width: 1107px) {
+      display: none;
+    }
     &-text {
       font-family: 'Rubik';
       font-style: normal;
