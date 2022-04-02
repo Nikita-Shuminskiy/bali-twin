@@ -1,7 +1,7 @@
 import React from 'react'
-import styles from './HomePage.module.scss'
-import logoHome from '../../Images/Logo-twin.png'
 import PlayGameButton from '../../Components/PlayGameButton/PlayGameButton'
+import logoHome from '../../Images/Logo-twin.png'
+import styles from './HomePage.module.scss'
 
 export const HomePage = () => {
     return (
