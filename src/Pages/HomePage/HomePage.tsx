@@ -1,31 +1,12 @@
 import React from 'react'
-import logoHome from '../../Images/Logo-home.png'
 import styles from './HomePage.module.scss'
+import logoHome from '../../Images/Logo-twin.png'
 
 export const HomePage = () => {
     return (
         <div className={styles['container']}>
             <div className={styles['logo-block']}>
                 <div>
-                    <div className={styles['setting-logo']}>
-                        <span
-                            className={`${styles['line']} ${styles['line-1']}`}
-                        />
-                        <span
-                            className={`${styles['line']} ${styles['line-2']}`}
-                        />
-                        <span
-                            className={`${styles['line']} ${styles['line-3']}`}
-                        />
-                        <div className={styles['back-top']} />
-                        <div className={styles['back-down']} />
-                        <span
-                            className={`${styles['line']} ${styles['line-4']}`}
-                        />
-                        <span
-                            className={`${styles['line']} ${styles['line-5']}`}
-                        />
-                    </div>
                     <img src={logoHome} alt="logo-home" />
                 </div>
                 <div className={`${styles['box']}`}>
