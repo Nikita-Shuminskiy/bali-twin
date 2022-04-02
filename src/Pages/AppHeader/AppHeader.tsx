@@ -9,7 +9,11 @@ import styles from './AppHeader.module.scss'
 export const AppHeader = () => {
     const { pathname } = useLocation()
     const styleLink = (PATH: any) => {
-        return `${styles['link']} ${pathname === PATH ? styles['active'] : ''}`
+        return `${styles['link']} ${
+            pathname === PATH
+                ? `${styles['active']} ${styles['active-line']}`
+                : ''
+        }`
     }
     const connectWalletHandler = () => {
         console.log('connectWalletHandler')
@@ -61,6 +65,7 @@ export const AppHeader = () => {
                     </svg>
                 </div>
             </CustomLink>
+
             <div className={styles['block-nav']}>
                 <CustomLink className={styleLink(PATH.GAME)} to={PATH.GAME}>
                     Game

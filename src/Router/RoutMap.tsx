@@ -11,8 +11,8 @@ const RoutMap = () => {
         <>
             <AppHeader />
             <Routes>
-                <Route path={PATH.HOME} element={<MenuBurger />} />
-                <Route path={PATH.MAIN || PATH.HOME} element={<HomePage />} />
+                <Route path={PATH.HOME} element={<HomePage />} />
+                <Route path={PATH.MAIN} element={<HomePage />} />
                 <Route
                     path={PATH.GAME}
                     element={
