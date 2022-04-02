@@ -1,6 +1,7 @@
 import React from 'react'
 import logoHome from '../../Images/Logo-home.png'
 import styles from './HomePage.module.scss'
+import PlayGameButton from '../../Components/PlayGameButton/PlayGameButton'
 
 export const HomePage = () => {
     return (
@@ -28,15 +29,7 @@ export const HomePage = () => {
                     </div>
                     <img src={logoHome} alt="logo-home" />
                 </div>
-                <div className={`${styles['box']}`}>
-                    <span className={styles['btn-line-left']} />
-                    <div
-                        className={`${styles['btn']} ${styles['frosted-glass']}`}
-                    >
-                        <span className={styles['text-btn']}>Play Game</span>
-                    </div>
-                    <span className={styles['btn-line-right']} />
-                </div>
+                <PlayGameButton />
                 <div className={styles['description']}>
                     Unite the world to create and develop the Island together
                 </div>
