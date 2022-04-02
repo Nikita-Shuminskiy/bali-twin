@@ -79,85 +79,96 @@
     width: 100%;
     height: 100vh;
     margin: 0;
-    padding: 80px 0;
+    padding: 110px 0 50px;
     list-style: none;
     text-align: center;
     z-index: 10;
+  }
 
-    li {
-      position: relative;
+  .menu__item-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 44px;
+    position: relative;
+  }
 
-      a:after {
-        display: block;
-        position: absolute;
-        width: 0;
-        height: 4px;
-        background: #FFFFFF;
-        box-shadow: 0px 0px 4px #FFFFFF;
-        border-radius: 4px;
-        content: "";
-        /*    transition: width 0.9s ease-out;*/
-        filter: blur(1px);
-        z-index: 9999;
-      }
+  .menu__item-inner:hover {
+    max-width: 312px;
+    width: 100%;
+    height: 56px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 36.61%, rgba(255, 255, 255, 0.0672) 105.36%);
+    border-radius: 2px;
+    margin-bottom: 25px;
+  }
 
-      a:before {
-        display: block;
-        position: absolute;
-        width: 0;
-        height: 10px;
-        background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FF1AB1 50%, rgba(255, 255, 255, 0) 100%);
-        filter: blur(5px);
-        border-radius: 4px;
-        content: "";
-        transition: width 0.3s ease-out;
-        z-index: 999;
-        margin-top: 56px;
+  .menu__item-inner-pink-layout{
+    position: absolute;
+    transition: height 0.3s;
+    height: 0px;
+    bottom: 0;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FF1AB1 50%, rgba(255, 255, 255, 0) 100%);
+    filter: blur(4px);
+    width: 100%;
+  }
 
-      }
-
-      a:hover:after,
-      a:focus:after {
-        -webkit-box-shadow: 5px -8px 97px 17px rgba(255, 255, 255, 1);
-        -moz-box-shadow: 5px -8px 97px 17px rgba(255, 255, 255, 1);
-        box-shadow: 5px -8px 97px 17px rgba(255, 255, 255, 1);
-        margin-top: 35px;
-        left: 134px;
-        width: 100px;
-      }
-
-      a:hover:before,
-      a:focus:before {
-        left: 15%;
-        width: 70%;
-      }
-    }
+  .menu__item-inner-white-layout{
+    position: absolute;
+    transition: height 0.3s;
+    width: 86px;
+    height: 0px;
+    background: #FFFFFF;
+    opacity: 0.64;
+    filter: blur(24px);
+    border-radius: 100px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .menu__item {
-    display: block;
-    padding: 12px 24px;
+    font-family: 'Rubik';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 120%;
+    text-decoration: none;
     color: #FFFFFF;
     opacity: 0.6;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    text-decoration: none;
-    width: 312px;
-    height: 46px;
-    margin: 12px 0px;
+    position: relative;
   }
 
-  .menu__item:hover {
+  .menu__item:after{
+    position: absolute;
+    content: '';
+    bottom: -17px;
+    z-index: 100;
+    transition: height 0.3s;
+    width: 100%;
+    height: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px #FFFFFF;
+    border-radius: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+
+  .menu__item-inner:hover:hover .menu__item-inner-pink-layout{
+    height: 4px;
+  }
+  .menu__item-inner:hover:hover .menu__item-inner-white-layout{
+    height: 16px;
+  }
+
+  .menu__item-inner:hover .menu__item:after{
+    height: 4px;
+  }
+
+  .menu__item-inner:hover .menu__item {
     opacity: 1;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 36.61%, rgba(255, 255, 255, 0.0672) 105.36%);
     border-radius: 2px;
-    /*  width: 312px;*/
-    height: 46px;
   }
 
   .show-menu.menu__btn > span {
@@ -229,4 +240,37 @@
   .hamburger-menu {
     display: none;
   }
+}
+
+.btn-connect-wallet-mobile {
+  margin-top: 56px;
+  max-width: 130px;
+  width: 100%;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(30px);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  &-text {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+    opacity: 0.64;
+  }
+}
+
+.btn-connect-wallet-mobile:hover {
+  background: rgba(4, 4, 32, 0.12);
+  box-shadow: 12px 0px 24px rgba(10, 206, 219, 0.16), -12px 0px 24px rgba(255, 26, 177, 0.16);
+}
+
+.btn-connect-wallet-mobile:hover .btn-connect-wallet-mobile-text {
+  opacity: 1;
 }
