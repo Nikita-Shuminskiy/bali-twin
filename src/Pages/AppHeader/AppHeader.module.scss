@@ -1,49 +1,52 @@
 .container {
-  background: rgba(4, 4, 32, 0.7);
-  backdrop-filter: blur(32px);
+  padding: 0 56px 0;
   height: 80px;
+  background: rgba(4, 4, 32, 0.2);
+  backdrop-filter: blur(32px);
   position: fixed;
   left: 0;
   z-index: 20;
   right: 0;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: space-around;
   flex-wrap: wrap;
   @media (max-width: 1054px) {
     padding: 20px 24px;
     justify-content: start;
   }
-
-  img {
-    width: 180px;
-    height: 19px;
+  .logo{
+      padding: 32px 0 32px;
   }
-
-  .btn-header {
+  .btn-connect-wallet {
     max-width: 130px;
-    height: auto;
+    width: 100%;
+    height: 40px;
     background: rgba(255, 255, 255, 0.12);
-    border: 2px solid rgba(255, 255, 255, 0.12);
     backdrop-filter: blur(30px);
     border-radius: 8px;
-    color: #FFFFFF;
-    opacity: 0.8;
-    line-height: 24px;
-    padding: 8px 16px;
-    text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    &-text {
+      font-family: 'Rubik';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: #FFFFFF;
+      opacity: 0.64;
+    }
   }
 
-  .btn-header:hover {
-    border: 2px solid rgba(128, 128, 128, 0.57);
-    border-radius: 8px;
-    color: #FFFFFF;
-    opacity: 1;
+  .btn-connect-wallet:hover {
     background: rgba(4, 4, 32, 0.12);
     box-shadow: 12px 0px 24px rgba(10, 206, 219, 0.16), -12px 0px 24px rgba(255, 26, 177, 0.16);
+  }
+
+  .btn-connect-wallet:hover .btn-connect-wallet-text{
+    opacity: 1;
   }
 
   @media screen and (max-width: 1067px) {
@@ -54,15 +57,17 @@
 
   .block-nav {
     .link {
+      font-family: 'Rubik';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      opacity: 0.6;
+      line-height: 120%;
       position: relative;
       color: #FFFFFF;
       cursor: pointer;
-      line-height: 1;
       text-decoration: none;
       margin: 0 32px;
-      font-size: 17px;
-      opacity: 0.8;
-
     }
 
     .link:after {
@@ -86,6 +91,10 @@
       -moz-box-shadow: 1px -18px 47px 30px rgba(255, 255, 255, 0.41);
       box-shadow: 1px -18px 47px 30px rgba(255, 255, 255, 0.41);
       width: 110%;
+    }
+
+    .link.active{
+      opacity: 1;
     }
 
     .link.active:after{
