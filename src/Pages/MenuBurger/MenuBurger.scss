@@ -5,9 +5,23 @@
   right: 0;
   z-index: -1;
 
-  #menu__toggle {
-    opacity: 0;
-    display: none;
+  //.show-menu {
+  //  opacity: 0;
+  //  display: none;
+  //}
+  .frosted-glass {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.0768) 0%, rgba(255, 255, 255, 0) 20.83%, rgba(255, 255, 255, 0) 80.73%, rgba(255, 255, 255, 0.0768) 100%);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  .frosted-glass:before {
+    content: "";
+    box-shadow: inset 0 0 2000px rgba(241, 241, 241, 0.5);
+    backdrop-filter: blur(3px);
+    margin: -20px;
+    z-index: -1;
   }
 
   .menu__btn {
@@ -38,7 +52,9 @@
   }
 
   .menu__box {
-    background: rgba(4, 4, 32, 0.64);
+    background: rgba(4, 4, 32, 0.94);
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
     position: relative;
     overflow: hidden;
   }
@@ -66,12 +82,11 @@
     padding: 80px 0;
     list-style: none;
     text-align: center;
-    background: rgba(4, 4, 32, 0.64);
-    -webkit-backdrop-filter: blur(1px);
-    backdrop-filter: blur(1px);
     z-index: 10;
 
     li {
+      position: relative;
+
       a:after {
         display: block;
         position: absolute;
@@ -90,7 +105,7 @@
         display: block;
         position: absolute;
         width: 0;
-        height: 4px;
+        height: 10px;
         background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FF1AB1 50%, rgba(255, 255, 255, 0) 100%);
         filter: blur(5px);
         border-radius: 4px;
@@ -107,14 +122,14 @@
         -moz-box-shadow: 5px -8px 97px 17px rgba(255, 255, 255, 1);
         box-shadow: 5px -8px 97px 17px rgba(255, 255, 255, 1);
         margin-top: 35px;
-        left: 46.5%;
-        width: 7%;
+        left: 134px;
+        width: 100px;
       }
 
       a:hover:before,
       a:focus:before {
-        left: 35%;
-        width: 30%;
+        left: 15%;
+        width: 70%;
       }
     }
   }
@@ -141,25 +156,25 @@
     opacity: 1;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 36.61%, rgba(255, 255, 255, 0.0672) 105.36%);
     border-radius: 2px;
-    width: 312px;
+    /*  width: 312px;*/
     height: 46px;
   }
 
-  #menu__toggle:checked ~ .menu__btn > span {
+  .show-menu.menu__btn > span {
     transform: rotate(45deg);
   }
 
-  #menu__toggle:checked ~ .menu__btn > span::before {
+  .show-menu.menu__btn > span::before {
     top: 0;
     transform: rotate(0);
   }
 
-  #menu__toggle:checked ~ .menu__btn > span::after {
+  .show-menu.menu__btn > span::after {
     top: 0;
     transform: rotate(90deg);
   }
 
-  #menu__toggle:checked ~ .menu__box {
+  .show-menu ~ .menu__box {
     /*    transform: translateX(-110vw);*/
     visibility: visible;
     left: 0;

@@ -1,18 +1,34 @@
-import React from 'react'
-import { CustomLink } from '../../../src/Components/CustomLink/CustomLink'
+import React, { useState } from 'react'
 import { PATH } from '../../../src/Router/PATH/PATH'
+import { CustomLink } from '../../Components/CustomLink/CustomLink'
 import './MenuBurger.scss'
 
 export const MenuBurger = () => {
+    const [show, setShow] = useState<boolean>(false)
+
+    const toggleMenu = () => {
+        setShow(!show)
+    }
+
+    const closeMenu = () => {
+        setShow(false)
+    }
+
     return (
-        <div className="hamburger-menu">
-            <input id="menu__toggle" type="checkbox" />
-            <label className="menu__btn" htmlFor="menu__toggle">
+        <div className={`hamburger-menu frosted-glass`}>
+            <label
+                className={`menu__btn ${show ? 'show-menu' : ''}`}
+                onClick={toggleMenu}
+            >
                 <span></span>
             </label>
-            <ul className="menu__box">
+            <ul className="menu__box frosted-glass">
                 <li>
-                    <CustomLink className={'menu__item'} to={PATH.GAME}>
+                    <CustomLink
+                        className={'menu__item'}
+                        onClick={closeMenu}
+                        to={PATH.GAME}
+                    >
                         Game
                     </CustomLink>
                 </li>
