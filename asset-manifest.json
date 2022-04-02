@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/bali-twin/static/css/main.cf0c7604.css",
-    "main.js": "/bali-twin/static/js/main.e0396e9c.js",
+    "main.css": "/bali-twin/static/css/main.f3fd5bcd.css",
+    "main.js": "/bali-twin/static/js/main.a1d040df.js",
     "static/js/787.d58b11d4.chunk.js": "/bali-twin/static/js/787.d58b11d4.chunk.js",
     "static/media/backdrop-forest.jpg": "/bali-twin/static/media/backdrop-forest.862013809f5e3a1a7fb0.jpg",
     "static/media/bg.png": "/bali-twin/static/media/bg.999fc52a9f3efcb2f668.png",
     "static/media/Logo-twin.png": "/bali-twin/static/media/Logo-twin.d0920393a9f50f928ea6.png",
     "static/media/card-img.jpg": "/bali-twin/static/media/card-img.2147521e67951df770c7.jpg",
     "index.html": "/bali-twin/index.html",
-    "main.cf0c7604.css.map": "/bali-twin/static/css/main.cf0c7604.css.map",
-    "main.e0396e9c.js.map": "/bali-twin/static/js/main.e0396e9c.js.map",
+    "main.f3fd5bcd.css.map": "/bali-twin/static/css/main.f3fd5bcd.css.map",
+    "main.a1d040df.js.map": "/bali-twin/static/js/main.a1d040df.js.map",
     "787.d58b11d4.chunk.js.map": "/bali-twin/static/js/787.d58b11d4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cf0c7604.css",
-    "static/js/main.e0396e9c.js"
+    "static/css/main.f3fd5bcd.css",
+    "static/js/main.a1d040df.js"
   ]
 }
