@@ -15,13 +15,12 @@
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    height: 95vh;
+    height: 100%;
     @media (max-width: 1067px) {
       justify-content: space-evenly;
     }
     img {
       height: auto;
-      padding-top: 125px;
       mix-blend-mode: lighten;
     }
 
@@ -62,6 +61,7 @@
       text-align: center;
       color: #FFFFFF;
       opacity: 80%;
+      margin-bottom: 24px;
       @media (max-width: 1067px) {
         display: none;
       }
@@ -93,4 +93,12 @@
   @media (max-width: 400px) {
     bottom: 0;
   }
+}
+
+.logo-block-btn-logo-inner{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
