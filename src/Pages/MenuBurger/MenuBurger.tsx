@@ -19,14 +19,18 @@ export const MenuBurger: React.FC<MenuBurgerPropsType> = ({
             </label>
             <ul className="menu__box frosted-glass">
                 <li onMouseUp={closeMenu} className={'menu__item-inner'}>
-                    <CustomLink className={'menu__item'} to={PATH.GAME}>
+                    <CustomLink className={'menu__item'} to={PATH.HOME}>
                         Game
                     </CustomLink>
                     <div className={'menu__item-inner-pink-layout'}></div>
                     <div className={'menu__item-inner-white-layout'}></div>
                 </li>
                 <li className={'menu__item-inner'}>
-                    <CustomLink className="menu__item" to="#">
+                    <CustomLink
+                        onMouseUp={closeMenu}
+                        className="menu__item"
+                        to={PATH.COLLECTION}
+                    >
                         Collection
                     </CustomLink>
                     <div className={'menu__item-inner-pink-layout'}></div>

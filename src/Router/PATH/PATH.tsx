@@ -1,11 +1,11 @@
-export const PATH: pathType = {
+export const PATH: PathType = {
     HOME: '/',
-    GAME: '/game',
-    MAIN: 'bali-twin',
+    MAIN: '/bali-twin',
+    COLLECTION: '/Collection',
 }
 
-export type pathType = {
+export type PathType = {
     HOME: '/'
-    GAME: '/game'
-    MAIN: 'bali-twin'
+    MAIN: '/bali-twin'
+    COLLECTION: '/Collection'
 }

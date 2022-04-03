@@ -13,15 +13,7 @@ const RoutMap = () => {
             <Routes>
                 <Route path={PATH.HOME} element={<HomePage />} />
                 <Route path={PATH.MAIN} element={<HomePage />} />
-                <Route
-                    path={PATH.GAME}
-                    element={
-                        <>
-                            <HomePage />
-                            <GamePage />
-                        </>
-                    }
-                />
+                <Route path={PATH.COLLECTION} element={<GamePage />} />
             </Routes>
         </>
     )

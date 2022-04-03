@@ -128,7 +128,7 @@ export const GamePage: React.FC<GamePropsType> = () => {
     }
 
     return (
-        <div id={PATH.GAME}>
+        <div>
             <div className={styles['wrapper']}>
                 <div className={styles['load-connection-box']}>
                     <Connection
