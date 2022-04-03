@@ -1,4 +1,6 @@
 import React from 'react'
+import { PATH } from '../../../src/Router/PATH/PATH'
+import { CustomLink } from '../../Components/CustomLink/CustomLink'
 import styles from './PlayGameButton.module.scss'
 
 const PlayGameButton = () => {
@@ -7,7 +9,7 @@ const PlayGameButton = () => {
             <div className={styles['button-pink-layout']}></div>
             <div className={styles['button-white-layout']}></div>
             <div className={styles['button-rainbow-layout']}></div>
-            <div className={styles['button-main']}>
+            <CustomLink to={PATH.GAME} className={styles['button-main']}>
                 <div className={styles['button-main-left-line']}>
                     <div
                         className={styles['button-main-left-line-pink-shadow']}
@@ -33,7 +35,7 @@ const PlayGameButton = () => {
                         }
                     ></div>
                 </div>
-            </div>
+            </CustomLink>
         </div>
     )
 }
