@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { PATH } from '../../../src/Router/PATH/PATH'
 import { CustomLink } from '../../Components/CustomLink/CustomLink'
 import './MenuBurger.scss'
@@ -18,12 +18,8 @@ export const MenuBurger: React.FC<MenuBurgerPropsType> = ({
                 <span></span>
             </label>
             <ul className="menu__box frosted-glass">
-                <li className={'menu__item-inner'}>
-                    <CustomLink
-                        className={'menu__item'}
-                        onClick={closeMenu}
-                        to={PATH.GAME}
-                    >
+                <li onClick={closeMenu} className={'menu__item-inner'}>
+                    <CustomLink className={'menu__item'} to={PATH.GAME}>
                         Game
                     </CustomLink>
                     <div className={'menu__item-inner-pink-layout'}></div>
