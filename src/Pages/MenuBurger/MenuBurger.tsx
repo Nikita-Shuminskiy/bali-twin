@@ -3,21 +3,12 @@ import { PATH } from '../../../src/Router/PATH/PATH'
 import { CustomLink } from '../../Components/CustomLink/CustomLink'
 import './MenuBurger.scss'
 
-export const MenuBurger = () => {
-    const [show, setShow] = useState<boolean>(false)
-
-    const toggleMenu = () => {
-        setShow(!show)
-    }
-
-    const closeMenu = () => {
-        setShow(false)
-    }
-
-    const connectWalletHandler = () => {
-        console.log('connectWalletHandler')
-    }
-
+export const MenuBurger: React.FC<MenuBurgerPropsType> = ({
+    closeMenu,
+    toggleMenu,
+    connectWalletHandler,
+    show,
+}) => {
     return (
         <div className={`hamburger-menu frosted-glass`}>
             <label
@@ -78,4 +69,11 @@ export const MenuBurger = () => {
             </ul>
         </div>
     )
+}
+
+interface MenuBurgerPropsType {
+    show: boolean
+    toggleMenu: () => void
+    closeMenu: () => void
+    connectWalletHandler: () => void
 }

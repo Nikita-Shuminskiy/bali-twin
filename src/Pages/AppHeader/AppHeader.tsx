@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useLocation } from 'react-router-dom'
 import { CustomLink } from '../../Components/CustomLink/CustomLink'
 import logo from '../../Images/logo-twin.png'
@@ -8,6 +8,22 @@ import styles from './AppHeader.module.scss'
 
 export const AppHeader = () => {
     const { pathname } = useLocation()
+    const [show, setShow] = useState<boolean>(false)
+
+    const toggleMenu = () => {
+        if (show) {
+            setShow(false)
+            document.body.style.overflow = 'auto'
+        } else {
+            setShow(true)
+            document.body.style.overflow = 'hidden'
+        }
+    }
+    const closeMenu = () => {
+        setShow(false)
+        document.body.style.overflow = 'auto'
+    }
+
     const styleLink = (PATH: any) => {
         return `${styles['link']} ${
             pathname === PATH
@@ -15,13 +31,24 @@ export const AppHeader = () => {
                 : ''
         }`
     }
+
     const connectWalletHandler = () => {
         console.log('connectWalletHandler')
     }
+
     return (
         <div className={styles['container']}>
-            <MenuBurger />
-            <CustomLink className={styleLink(PATH.HOME)} to={PATH.HOME}>
+            <MenuBurger
+                show={show}
+                closeMenu={closeMenu}
+                connectWalletHandler={connectWalletHandler}
+                toggleMenu={toggleMenu}
+            />
+            <CustomLink
+                onClick={closeMenu}
+                className={styleLink(PATH.HOME)}
+                to={PATH.HOME}
+            >
                 <div className={styles['logo']}>
                     <svg
                         width="166"
