@@ -11,7 +11,7 @@ import 'swiper/scss/pagination'
 const RoutMap = () => {
     return (
         <>
-            {/*<AppHeader />*/}
+            <AppHeader />
             <Routes>
                 <Route path={PATH.HOME} element={<GamePage />} />
                 <Route path={PATH.MAIN} element={<HomePage />} />
