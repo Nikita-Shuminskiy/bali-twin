@@ -6,6 +6,7 @@ import {
     ConnectionTypeCard,
 } from '../../../Components/ConnectionCard/ConnectionCard'
 import { CardType } from '../GamePage'
+import { SwiperSlide } from 'swiper/react'
 
 export interface TypeCard {
     type: ConnectionTypeCard
@@ -36,12 +37,7 @@ export const Connection: React.FC<ConnectionPropsType> = ({
                 <SliderGame>
                     {arrayConnections.map((card) => {
                         return (
-                            <div
-                                key={card.id}
-                                className={
-                                    styles['game-page-connection-card-box']
-                                }
-                            >
+                            <SwiperSlide key={card.id}>
                                 <ConnectionCard
                                     disconnectGameCallback={() =>
                                         disconnectGameCallback(card.id)
@@ -51,7 +47,7 @@ export const Connection: React.FC<ConnectionPropsType> = ({
                                     }}
                                     card={card}
                                 />
-                            </div>
+                            </SwiperSlide>
                         )
                     })}
                 </SliderGame>

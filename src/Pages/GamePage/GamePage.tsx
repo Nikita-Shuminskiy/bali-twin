@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import styles from './GamePage.module.scss'
-import './slider.css'
 import { Connection } from './Connection/Connection'
 import { v4 } from 'uuid'
 import imgCard from '../../Components/ConnectionCard/mock/card-img.jpg'
