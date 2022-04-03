@@ -1,0 +1,19 @@
+.swiper-wrapper{
+    padding-top: 40px;
+}
+
+
+@media (max-width: 845px) {
+    .swiper-slide.swiper-slide-active{
+        width: 270px;
+        padding-left: 30px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .swiper-slide.swiper-slide-active{
+        padding-left: 30px;
+    }
+}
+

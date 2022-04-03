@@ -1,12 +1,10 @@
-import React, { useState } from 'react'
-import { v4 } from 'uuid'
-import { ConnectionTypeCard } from '../../Components/ConnectionCard/ConnectionCard'
-import imgCard from '../../Components/ConnectionCard/mock/card-img.jpg'
-import { DisconnectAllModal } from '../../Components/Modals/DisconnectAllModal'
-import { PATH } from '../../Router/PATH/PATH'
-import { Connection } from './Connection/Connection'
+import React, { useEffect, useState } from 'react'
 import styles from './GamePage.module.scss'
-import './slider.css'
+import { Connection } from './Connection/Connection'
+import { v4 } from 'uuid'
+import imgCard from '../../Components/ConnectionCard/mock/card-img.jpg'
+import { ConnectionTypeCard } from '../../Components/ConnectionCard/ConnectionCard'
+import { DisconnectAllModal } from '../../Components/Modals/DisconnectAllModal'
 
 export const GamePage: React.FC<GamePropsType> = () => {
     const arrayConnectionsCreate: Array<CardType> = [
@@ -128,7 +126,7 @@ export const GamePage: React.FC<GamePropsType> = () => {
     }
 
     return (
-        <div>
+        <div id={'game'}>
             <div className={styles['wrapper']}>
                 <div className={styles['load-connection-box']}>
                     <Connection
