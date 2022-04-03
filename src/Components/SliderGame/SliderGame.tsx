@@ -10,13 +10,14 @@ export const SliderGame: React.FC<SliderGamePropsType> = ({
         ? settings
         : {
               speed: 500,
-              slidesToShow: 5,
-              slidesToScroll: 5,
+              slidesToShow: 4,
+              slidesToScroll: 4,
+              centerPadding: '34px',
               rows: 1,
               initialSlide: 0,
               infinite: false,
               dots: false,
-              arrows: false,
+              arrows: true,
               adaptiveHeight: true,
               responsive: [
                   {
@@ -62,11 +63,7 @@ export const SliderGame: React.FC<SliderGamePropsType> = ({
                   },
               ],
           }
-    return (
-        <div className={styles['container-slider']}>
-            <Slider {...sliderSettings}>{children}</Slider>
-        </div>
-    )
+    return <Slider {...sliderSettings}>{children}</Slider>
 }
 
 interface SliderGamePropsType {

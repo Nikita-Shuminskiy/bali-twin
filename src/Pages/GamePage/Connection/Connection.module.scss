@@ -57,7 +57,13 @@
   }
 
   &-connection-card-box{
-    margin-bottom: 50px;
-    margin-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    //margin-bottom: 50px;
+    //margin-right: 20px;
+    @media (max-width: 1100px) {
+      margin-bottom: 50px;
+      margin-right: 20px;
+    }
   }
 }

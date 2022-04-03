@@ -33,27 +33,29 @@ export const Connection: React.FC<ConnectionPropsType> = ({
                         </h3>
                     ) : null}
                 </div>
-            </div>
-            <SliderGame>
-                {arrayConnections.map((card) => {
-                    return (
-                        <div
-                            key={card.id}
-                            className={styles['game-page-connection-card-box']}
-                        >
-                            <ConnectionCard
-                                disconnectGameCallback={() =>
-                                    disconnectGameCallback(card.id)
+                <SliderGame>
+                    {arrayConnections.map((card) => {
+                        return (
+                            <div
+                                key={card.id}
+                                className={
+                                    styles['game-page-connection-card-box']
                                 }
-                                callback={() => {
-                                    callback(card.id, card.type)
-                                }}
-                                card={card}
-                            />
-                        </div>
-                    )
-                })}
-            </SliderGame>
+                            >
+                                <ConnectionCard
+                                    disconnectGameCallback={() =>
+                                        disconnectGameCallback(card.id)
+                                    }
+                                    callback={() => {
+                                        callback(card.id, card.type)
+                                    }}
+                                    card={card}
+                                />
+                            </div>
+                        )
+                    })}
+                </SliderGame>
+            </div>
         </>
     )
 }
