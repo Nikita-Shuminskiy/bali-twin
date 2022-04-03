@@ -111,7 +111,7 @@
       background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FF1AB1 50%, rgba(255, 255, 255, 0) 100%);
       filter: blur(12px);
       z-index: -1;
-      right: 47%;
+      right: 56%;
       bottom: 50%;
       transform: translate(48%, 15%);
     }
@@ -135,14 +135,14 @@
 
       span {
         position: absolute;
-        width: 62px;
+        width: 100%;
         height: 20px;
         background: #FFFFFF;
         opacity: 0.8;
         filter: blur(24px);
         border-radius: 100px;
         top: 30px;
-        right: 15px;
+        left: 0px;
         z-index: -1;
       }
     }
@@ -156,11 +156,11 @@
       content: '';
       position: absolute;
       width: 100%;
-      height: 3px;
+      height: 4px;
       border-radius: 4px;
       transform: rotate(180deg);
       top: 45px;
-      left: 2px;
+      left: 0;
     }
 
 
