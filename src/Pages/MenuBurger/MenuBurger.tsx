@@ -18,7 +18,7 @@ export const MenuBurger: React.FC<MenuBurgerPropsType> = ({
                 <span></span>
             </label>
             <ul className="menu__box frosted-glass">
-                <li onClick={closeMenu} className={'menu__item-inner'}>
+                <li onMouseUp={closeMenu} className={'menu__item-inner'}>
                     <CustomLink className={'menu__item'} to={PATH.GAME}>
                         Game
                     </CustomLink>
