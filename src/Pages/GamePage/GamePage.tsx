@@ -29,6 +29,27 @@ export const GamePage: React.FC<GamePropsType> = () => {
             date: `${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}`,
             type: 'createGame',
         },
+        {
+            id: v4(),
+            title: 'Bali Twin',
+            srcImg: imgCard,
+            date: `${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}`,
+            type: 'createGame',
+        },
+        {
+            id: v4(),
+            title: 'Bali Twin',
+            srcImg: imgCard,
+            date: `${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}`,
+            type: 'createGame',
+        },
+        {
+            id: v4(),
+            title: 'Bali Twin',
+            srcImg: imgCard,
+            date: `${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}`,
+            type: 'createGame',
+        },
     ]
 
     const [arrayConnectionsLoad, setArrayConnectionsLoad] = useState<
@@ -54,10 +75,6 @@ export const GamePage: React.FC<GamePropsType> = () => {
             srcImg: imgCard,
             date: `${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}`,
             type: 'loadingGame',
-        },
-        {
-            id: v4(),
-            type: 'newConnection',
         },
         {
             id: v4(),

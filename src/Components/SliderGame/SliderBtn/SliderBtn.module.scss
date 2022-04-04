@@ -1,0 +1,28 @@
+.slider-button {
+  position: absolute;
+  clear: both;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 100;
+  transform: translateY(-50%);
+  &-right{
+    right: 70px;
+  }
+
+  &-left{
+    left: 70px;
+    transform: rotate(180deg);
+  }
+
+  &-disabled {
+    opacity: 0.4;
+    pointer-events: none;
+  }
+}
