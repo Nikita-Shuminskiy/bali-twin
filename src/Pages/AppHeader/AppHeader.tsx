@@ -23,9 +23,7 @@ export const AppHeader = () => {
         setShow(false)
         document.body.style.overflow = 'auto'
     }
-    const styleLink = (PATH: any) => {
-        console.log(PATH)
-        console.log(pathname)
+    const styleLink = (PATH: string) => {
         return `${styles['link']} ${
             pathname === PATH
                 ? `${styles['active']} ${styles['active-line']}`
@@ -52,9 +50,8 @@ export const AppHeader = () => {
                     className={`${styles['link']} ${
                         location.pathname === '/' ||
                         location.pathname === '/bali-twin' ||
-                        location.pathname === '/bali-twin/'
-                            ? `${styles['active']} ${styles['active-line']}`
-                            : location.pathname === '/bali-twin/'
+                        location.pathname === '/bali-twin/' ||
+                        location.pathname === '/game/play-game'
                             ? `${styles['active']} ${styles['active-line']}`
                             : ''
                     }

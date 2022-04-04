@@ -1,22 +1,26 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import { AppHeader } from '../Pages/AppHeader/AppHeader'
-import { GamePage } from '../Pages/GamePage/GamePage'
-import { HomePage } from '../Pages/HomePage/HomePage'
-import { PATH } from './PATH/PATH'
 import 'swiper/scss'
 import 'swiper/scss/navigation'
 import 'swiper/scss/pagination'
+import { AppHeader } from '../Pages/AppHeader/AppHeader'
+import { screens } from './PATH/PATH'
 
 const RoutMap = () => {
     return (
         <>
             <AppHeader />
             <Routes>
-                <Route path={PATH.HOME} element={<HomePage />} />
-                <Route path={PATH.MAIN} element={<HomePage />} />
-                <Route path={PATH.GAME} element={<HomePage />} />
-                <Route path={PATH.COLLECTION} element={<GamePage />} />
+                {screens['AUTHORIZED'].map((route, index) => {
+                    debugger
+                    return (
+                        <Route
+                            key={index}
+                            path={route?.path}
+                            element={route?.component}
+                        />
+                    )
+                })}
             </Routes>
         </>
     )
