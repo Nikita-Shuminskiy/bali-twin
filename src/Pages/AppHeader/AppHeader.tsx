@@ -24,6 +24,8 @@ export const AppHeader = () => {
         document.body.style.overflow = 'auto'
     }
     const styleLink = (PATH: any) => {
+        console.log(PATH)
+        console.log(pathname)
         return `${styles['link']} ${
             pathname === PATH
                 ? `${styles['active']} ${styles['active-line']}`
@@ -87,7 +89,9 @@ export const AppHeader = () => {
             <div className={styles['block-nav']}>
                 <CustomLink
                     className={`${styles['link']} ${
-                        location.pathname === '/'
+                        location.pathname === '/' ||
+                        location.pathname === '/bali-twin' ||
+                        location.pathname === '/bali-twin/'
                             ? `${styles['active']} ${styles['active-line']}`
                             : location.pathname === '/bali-twin/'
                             ? `${styles['active']} ${styles['active-line']}`
