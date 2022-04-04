@@ -1,33 +1,12 @@
 import React from 'react'
-import { useSwiper } from 'swiper/react'
 import styles from './SliderBtn.module.scss'
-export const SliderBtn: React.FC<SliderBtnPropsType> = ({
-    type,
-    Move,
-    disabled,
-}) => {
-    const btnType = {
-        nextBtn: document.querySelectorAll('.swiper-button-next')[
-            type === 'Load' ? 0 : 1
-        ],
-        prevBtn: document.querySelectorAll('.swiper-button-prev')[
-            type === 'Load' ? 0 : 1
-        ],
-    }
+export const SliderBtnPrev: React.FC = (props: any) => {
     return (
         <div
+            {...props}
             className={`${styles['slider-button']} ${
-                Move === 'nextBtn'
-                    ? styles['slider-button-right']
-                    : styles['slider-button-left']
-            } ${disabled ? styles['slider-button-disabled'] : ''}`}
-            onClick={() => {
-                if (btnType[Move]) {
-                    console.log(btnType[Move])
-                    // @ts-ignore
-                    btnType[Move].click()
-                }
-            }}
+                styles['slider-button-left']
+            } ${styles[props.className.split(' ')[2]]}`}
         >
             <svg
                 width="14"
@@ -45,10 +24,4 @@ export const SliderBtn: React.FC<SliderBtnPropsType> = ({
             </svg>
         </div>
     )
-}
-
-interface SliderBtnPropsType {
-    type: 'Load' | 'Create'
-    Move: 'nextBtn' | 'prevBtn'
-    disabled?: boolean
 }

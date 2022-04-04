@@ -1,40 +1,75 @@
 import React from 'react'
-import { Navigation, Pagination } from 'swiper'
-import { Swiper } from 'swiper/react'
-import { SwiperProps } from 'swiper/react/swiper-react'
-import './slider.css'
+import styles from './SliderGame.module.scss'
+import Slider, { Settings } from 'react-slick'
+import { SliderBtnPrev } from './SliderBtn/SliderBtnPrev'
+import { SliderBtnNext } from './SliderBtn/SliderBtnNext'
 
 export const SliderGame: React.FC<SliderGamePropsType> = ({
     children,
     settings,
 }) => {
-    const sliderSettings: SwiperProps = settings
+    const sliderSettings = settings
         ? settings
         : {
-              modules: [Pagination, Navigation],
-              navigation: true,
-              breakpoints: {
-                  1038: { initialSlide: 0, slidesPerView: 4, spaceBetween: 32 },
-                  850: { initialSlide: 0, slidesPerView: 3, spaceBetween: 32 },
-                  570: {
-                      initialSlide: 0,
-                      slidesPerView: 2,
-                      spaceBetween: 32,
+              speed: 500,
+              nextArrow: <SliderBtnNext />,
+              prevArrow: <SliderBtnPrev />,
+              slidesToShow: 4,
+              slidesToScroll: 4,
+              centerPadding: '34px',
+              rows: 1,
+              initialSlide: 0,
+              infinite: false,
+              dots: false,
+              arrows: true,
+              adaptiveHeight: true,
+              responsive: [
+                  {
+                      breakpoint: 1310,
+                      settings: {
+                          slidesToShow: 4,
+                          slidesToScroll: 4,
+                          infinite: false,
+                          adaptiveHeight: true,
+                          dots: false,
+                          arrows: false,
+                      },
                   },
-                  310: {
-                      initialSlide: 0,
-                      slidesPerView: 1,
-                      spaceBetween: 0,
+                  {
+                      breakpoint: 1100,
+                      settings: {
+                          slidesToShow: 3,
+                          slidesToScroll: 3,
+                          adaptiveHeight: true,
+                          infinite: false,
+                          dots: false,
+                          arrows: false,
+                      },
                   },
-              },
+                  {
+                      breakpoint: 795,
+                      settings: {
+                          slidesToShow: 2,
+                          slidesToScroll: 2,
+                          adaptiveHeight: true,
+                          dots: false,
+                          arrows: false,
+                      },
+                  },
+                  {
+                      breakpoint: 541,
+                      settings: {
+                          infinite: false,
+                          adaptiveHeight: true,
+                          slidesToShow: 1,
+                          slidesToScroll: 1,
+                      },
+                  },
+              ],
           }
-    return (
-        <>
-            <Swiper {...sliderSettings}>{children}</Swiper>
-        </>
-    )
+    return <Slider {...sliderSettings}>{children}</Slider>
 }
 
 interface SliderGamePropsType {
-    settings?: SwiperProps
+    settings?: Settings
 }
