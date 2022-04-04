@@ -89,7 +89,7 @@ export const AppHeader = () => {
                     className={`${styles['link']} ${
                         location.pathname === '/'
                             ? `${styles['active']} ${styles['active-line']}`
-                            : location.pathname === '/bali-twin'
+                            : location.pathname === '/bali-twin/'
                             ? `${styles['active']} ${styles['active-line']}`
                             : ''
                     }
