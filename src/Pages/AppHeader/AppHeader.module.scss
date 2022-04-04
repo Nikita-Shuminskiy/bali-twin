@@ -12,8 +12,14 @@
   align-items: center;
   flex-wrap: wrap;
   @media (max-width: 1054px) {
-    padding: 20px 24px;
+    padding: 34px 24px;
     justify-content: start;
+    .logo{
+      img{
+        width: 124px;
+        height: 12px;
+      }
+    }
   }
 
   .logo {

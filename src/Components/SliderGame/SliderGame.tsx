@@ -16,13 +16,14 @@ export const SliderGame: React.FC<SliderGamePropsType> = ({
               prevArrow: <SliderBtnPrev />,
               slidesToShow: 4,
               slidesToScroll: 4,
-              centerPadding: '34px',
+              centerPadding: '20px 20px 20px 34px',
               rows: 1,
               initialSlide: 0,
               infinite: false,
               dots: false,
               arrows: true,
               adaptiveHeight: true,
+              centerMode: window.screen.width < 1067,
               responsive: [
                   {
                       breakpoint: 1310,
