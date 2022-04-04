@@ -1,8 +1,9 @@
 .wrapper{
-  background-size: cover;
   background: url("../../Images/backdrop-forest.jpg") no-repeat center;
   position: relative;
   overflow: hidden;
+  background-size: cover;
+  height: 160vh;
 }
 .wrapper::after{
   content: '';
@@ -14,6 +15,6 @@
   background-color:rgba(4, 4, 20, 0.8);
 }
 
-.load-connection-box{
-    padding-top: 80px;
+.load-connection-box {
+  padding-top: 149px;
 }
