@@ -34,11 +34,6 @@ export const Connection: React.FC<ConnectionPropsType> = ({
                         </h3>
                     ) : null}
                 </div>
-                {/*<SliderBtn*/}
-                {/*    type={type}*/}
-                {/*    Move={'prevBtn'}*/}
-                {/*    disabled={arrayConnections.length === 4}*/}
-                {/*/>*/}
                 <SliderGame>
                     {arrayConnections.map((card) => {
                         return (
@@ -56,11 +51,6 @@ export const Connection: React.FC<ConnectionPropsType> = ({
                         )
                     })}
                 </SliderGame>
-                {/*<SliderBtn*/}
-                {/*    type={type}*/}
-                {/*    Move={'nextBtn'}*/}
-                {/*    disabled={arrayConnections.length === 4}*/}
-                {/*/>*/}
             </div>
         </>
     )
