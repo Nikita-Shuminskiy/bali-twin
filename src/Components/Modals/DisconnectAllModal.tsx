@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import styles from './DisconnectAllModal.module.scss'
-import { ButtonGame } from '../ButtonGame/ButtonGame'
+import { ButtonGame } from 'Components'
 import ReactDOM from 'react-dom'
 
 export const DisconnectAllModal: React.FC<DisconnectAllModalPropsType> = ({

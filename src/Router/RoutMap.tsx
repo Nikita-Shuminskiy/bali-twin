@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import 'swiper/scss'
 import 'swiper/scss/navigation'
 import 'swiper/scss/pagination'
-import { AppHeader } from '../Pages/AppHeader/AppHeader'
+import { AppHeader } from 'Pages/AppHeader/AppHeader'
 import { screens } from './PATH/PATH'
 
 const RoutMap = () => {
@@ -12,7 +12,6 @@ const RoutMap = () => {
             <AppHeader />
             <Routes>
                 {screens['AUTHORIZED'].map((route, index) => {
-                    debugger
                     return (
                         <Route
                             key={index}

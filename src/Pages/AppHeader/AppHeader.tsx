@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import { useLocation } from 'react-router-dom'
-import { CustomLink } from '../../Components/CustomLink/CustomLink'
+import { CustomLink } from 'Components/CustomLink/CustomLink'
 import logo from '../../Images/logo.svg'
-import { MenuBurger } from '../../Pages/MenuBurger/MenuBurger'
-import { PATH } from '../../Router/PATH/PATH'
+import { PATH } from 'Router/PATH/PATH'
 import styles from './AppHeader.module.scss'
+import { MenuBurger } from 'Pages/MenuBurger/MenuBurger'
 
 export const AppHeader = () => {
     const { pathname } = useLocation()
