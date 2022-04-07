@@ -1,0 +1,14 @@
+.slick-slider{
+    z-index: 3;
+}
+
+.slick-track{
+    height: 400px;
+}
+
+
+@media (max-width: 500px) {
+    .slick-current{
+        width: max-content !important;
+    }
+}

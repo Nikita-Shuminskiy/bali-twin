@@ -1,11 +1,14 @@
 import { GamePage } from '../../Pages/GamePage/GamePage'
 import { HomePage } from '../../Pages/HomePage/HomePage'
-
+import { JobsPage } from '../../Pages/JobsPage/JobsPage'
+import { Collection } from 'Pages/Collection/Collection'
 export const PATH: PathType = {
     HOME: '/',
-    MAIN: '/bali-twin/',
+    // MAIN: '/bali-twin/',
     COLLECTION: '/game/Collection',
-    GAME: '/game/play-game',
+    GAME: '/game',
+    PLAY_GAME: '/game/play-game',
+    JOBS: '/Jobs',
 }
 
 export const allSitePaths: AllSitePathsType = {
@@ -13,17 +16,25 @@ export const allSitePaths: AllSitePathsType = {
         component: <HomePage />,
         path: PATH.HOME,
     },
-    MAIN: {
-        component: <HomePage />,
-        path: PATH.MAIN,
-    },
+    // MAIN: {
+    //     // component: <HomePage />,
+    //     // path: PATH.MAIN,
+    // },
     GAME: {
-        component: <GamePage />,
+        component: <HomePage />,
         path: PATH.GAME,
     },
-    COLLECTION: {
+    PLAY_GAME: {
         component: <GamePage />,
+        path: PATH.PLAY_GAME,
+    },
+    COLLECTION: {
+        component: <Collection />,
         path: PATH.COLLECTION,
+    },
+    JOBS: {
+        component: <JobsPage />,
+        path: PATH.JOBS,
     },
 }
 export const screens: { [key: string]: SitePathsType[] } = {
@@ -33,6 +44,7 @@ export const screens: { [key: string]: SitePathsType[] } = {
         allSitePaths.MAIN,
         allSitePaths.GAME,
         allSitePaths.COLLECTION,
+        allSitePaths.JOBS,
     ],
 }
 
@@ -47,7 +59,9 @@ export type AllSitePathsType = {
 
 export type PathType = {
     HOME: '/'
-    MAIN: '/bali-twin/'
+    // MAIN: '/bali-twin/'
     COLLECTION: '/game/Collection'
-    GAME: '/game/play-game'
+    GAME: '/game'
+    PLAY_GAME: '/game/play-game'
+    JOBS: '/Jobs'
 }

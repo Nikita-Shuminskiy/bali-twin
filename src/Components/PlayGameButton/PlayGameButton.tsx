@@ -9,7 +9,7 @@ const PlayGameButton = () => {
             <div className={styles['button-pink-layout']}></div>
             <div className={styles['button-white-layout']}></div>
             <div className={styles['button-rainbow-layout']}></div>
-            <CustomLink to={PATH.GAME} className={styles['button-main']}>
+            <CustomLink to={PATH.PLAY_GAME} className={styles['button-main']}>
                 <div className={styles['button-main-left-line']}>
                     <div
                         className={styles['button-main-left-line-pink-shadow']}

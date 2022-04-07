@@ -18,8 +18,10 @@
 
   .frosted-glass:before {
     content: "";
-    box-shadow: inset 0 0 2000px rgba(241, 241, 241, 0.5);
-    backdrop-filter: blur(3px);
+    //box-shadow: inset 0 0 2000px rgba(241, 241, 241, 0.5);
+    //backdrop-filter: blur(3px);
+    background: rgba(4, 4, 32, 0.6);
+    backdrop-filter: blur(56px);
     margin: -20px;
     z-index: -1;
   }
@@ -28,12 +30,12 @@
     display: flex;
     align-items: center;
     position: fixed;
-    top: 66px;
+    top: 31px;
     width: 24px;
     height: 10px;
     cursor: pointer;
     z-index: 12;
-    right: 40px;
+    right: 24px;
   }
 
   .menu__btn > span,
@@ -52,9 +54,9 @@
   }
 
   .menu__box {
-    background: rgba(4, 4, 32, 1);
+    background: rgba(4, 4, 32, 0.6);
+    backdrop-filter: blur(56px);
     -webkit-backdrop-filter: blur(1px);
-    backdrop-filter: blur(1px);
     position: relative;
     overflow: hidden;
   }
@@ -155,10 +157,11 @@
   }
 
 
-  .menu__item-inner:hover:hover .menu__item-inner-pink-layout{
+  .menu__item-inner:hover .menu__item-inner-pink-layout{
     height: 4px;
   }
-  .menu__item-inner:hover:hover .menu__item-inner-white-layout{
+
+  .menu__item-inner:hover .menu__item-inner-white-layout{
     height: 16px;
   }
 
@@ -168,9 +171,37 @@
 
   .menu__item-inner:hover .menu__item {
     opacity: 1;
-    //background: linear-gradient(180deg, rgba(255, 255, 255, 0) 36.61%, rgba(255, 255, 255, 0.0672) 105.36%);
     border-radius: 2px;
   }
+
+  .menu__item-inner.menu__item_link-active{
+    max-width: 312px;
+    width: 100%;
+    height: 56px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 36.61%, rgba(255, 255, 255, 0.0672) 105.36%);
+    border-radius: 2px;
+    margin-bottom: 25px;
+  }
+  .menu__item-inner.menu__item_link-active .menu__item-inner-pink-layout{
+    height: 4px;
+  }
+
+  .menu__item-inner.menu__item_link-active .menu__item-inner-white-layout{
+    height: 16px;
+  }
+  .menu__item-inner.menu__item_link-active .menu__item:after{
+    height: 4px;
+  }
+
+  .menu__item-inner.menu__item_link-active .menu__item {
+    opacity: 1;
+    border-radius: 2px;
+  }
+
+
+
+
+
 
   .show-menu.menu__btn > span {
     transform: rotate(45deg);

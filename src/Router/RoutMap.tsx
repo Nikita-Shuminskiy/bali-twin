@@ -1,10 +1,11 @@
+import { AppHeader } from 'Pages/AppHeader/AppHeader'
 import React from 'react'
-import { Route, Routes } from 'react-router-dom'
+import { Navigate, Route, Router, Routes } from 'react-router-dom'
 import 'swiper/scss'
 import 'swiper/scss/navigation'
 import 'swiper/scss/pagination'
-import { AppHeader } from 'Pages/AppHeader/AppHeader'
 import { screens } from './PATH/PATH'
+import { GamePage } from '../Pages/GamePage/GamePage'
 
 const RoutMap = () => {
     return (
@@ -20,6 +21,10 @@ const RoutMap = () => {
                         />
                     )
                 })}
+                <Route path={'/game'}>
+                    <Route path="play-game" element={<GamePage />} />
+                </Route>
+                <Route path="*" element={<Navigate to="/game" />} />
             </Routes>
         </>
     )

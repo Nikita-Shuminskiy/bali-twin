@@ -9,7 +9,6 @@ import { MenuBurger } from 'Pages/MenuBurger/MenuBurger'
 export const AppHeader = () => {
     const { pathname } = useLocation()
     const [show, setShow] = useState<boolean>(false)
-    let location = document.location
     const toggleMenu = () => {
         if (show) {
             setShow(false)
@@ -23,9 +22,9 @@ export const AppHeader = () => {
         setShow(false)
         document.body.style.overflow = 'auto'
     }
-    const styleLink = (PATH: string) => {
+    const styleLink = (...PATH: string[]) => {
         return `${styles['link']} ${
-            pathname === PATH
+            PATH.includes(pathname)
                 ? `${styles['active']} ${styles['active-line']}`
                 : ''
         }`
@@ -33,7 +32,6 @@ export const AppHeader = () => {
     const connectWalletHandler = () => {
         console.log('connectWalletHandler')
     }
-    console.log(location.pathname)
     return (
         <div className={styles['container']}>
             <MenuBurger
@@ -47,16 +45,8 @@ export const AppHeader = () => {
             </div>
             <div className={styles['block-nav']}>
                 <CustomLink
-                    className={`${styles['link']} ${
-                        location.pathname === '/' ||
-                        location.pathname === '/bali-twin' ||
-                        location.pathname === '/bali-twin/' ||
-                        location.pathname === '/game/play-game'
-                            ? `${styles['active']} ${styles['active-line']}`
-                            : ''
-                    }
-                    }`}
-                    to={PATH.MAIN}
+                    className={styleLink(PATH.HOME, PATH.GAME, PATH.PLAY_GAME)}
+                    to={PATH.GAME}
                 >
                     <span />
                     Game
@@ -72,7 +62,7 @@ export const AppHeader = () => {
                     <span />
                     Marketplace
                 </CustomLink>
-                <CustomLink className={styles['link']} to="#">
+                <CustomLink className={styleLink(PATH.JOBS)} to={PATH.JOBS}>
                     <span />
                     Jobs
                 </CustomLink>

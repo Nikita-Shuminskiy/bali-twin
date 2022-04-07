@@ -1,0 +1,162 @@
+$margin-bottom: 30px;
+
+.jobs-card {
+
+  &-wrapper {
+    color: white;
+    max-width: 365px;
+    min-width: 312px;
+    min-height: 407px;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(4, 4, 32, 0.64) 0%, rgba(4, 4, 32, 0.256) 100%);
+    box-shadow: 0px 12px 64px rgba(4, 4, 32, 0.32);
+    backdrop-filter: blur(32px);
+    border-radius: 8px;
+    margin-bottom: 30px;
+    @media (max-width: 720px) {
+      max-width: 312px;
+    }
+  }
+
+  &-container {
+    padding: 24px 24px 0 24px;
+  }
+}
+
+.top {
+  &-inner {
+    margin-bottom: 24px;
+    @media (max-width: 720px) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &-time {
+    display: block;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 120%;
+    color: #FFFFFF;
+    opacity: 0.32;
+    margin-bottom: 8px;
+  }
+
+  &-title {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    color: #FFFFFF;
+  }
+}
+
+
+.budget {
+  &-title {
+    display: block;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 120%;
+    color: #FFFFFF;
+    opacity: 0.32;
+    margin-bottom: 8px;
+  }
+
+  &-price {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: #FFFFFF;
+    opacity: 0.64;
+
+    &-inner {
+      margin-bottom: 24px;
+      @media (max-width: 720px) {
+        margin-bottom: 16px;
+      }
+    }
+
+    &-crypto {
+      font-family: 'Rubik';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 120%;
+      color: #FFFFFF;
+      margin-right: 12px;
+    }
+  }
+}
+
+.required-skills {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &-title {
+    display: flex;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 120%;
+    color: #FFFFFF;
+    opacity: 0.32;
+    margin-bottom: 8px;
+  }
+
+  &-inner {
+    margin-bottom: 16px;
+    @media (max-width: 720px) {
+      margin-bottom: 8px;
+    }
+  }
+
+  &-skill {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 100px;
+    height: 28px;
+    width: max-content;
+    margin-right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+
+    &-title {
+      padding: 2px 8px;
+      font-family: 'Rubik';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: #FFFFFF;
+    }
+  }
+}
+
+.description {
+  padding-bottom: 20px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #FFFFFF;
+  opacity: 0.56;
+}
+
+.jobs-button-box{
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}

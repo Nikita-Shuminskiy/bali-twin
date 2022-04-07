@@ -1,0 +1,22 @@
+.container{
+  background: url("../../Images/backdrop-forest.jpg") no-repeat center;
+  position: relative;
+  background-size: cover;
+  padding-top: 80px;
+  min-height: 100vh;
+  &::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color:rgba(4, 4, 20, 0.8);
+  }
+  .wrapper{
+    margin: 142px 70px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+}

@@ -10,13 +10,13 @@ export const ButtonGame: React.FC<ButtonGamePropsType> = ({
 }) => {
     const styleTypeButton = {
         error: styles['button-error'],
-        none: styles['button'],
+        none: styles['button-none'],
         active: styles['button-active'],
     }
 
     const styleTypeText = {
         error: styles['button-text-error'],
-        none: styles['button-text'],
+        none: styles['button-none-text'],
         active: styles['button-text'],
     }
 

@@ -1,6 +1,9 @@
+$color-border: rgba(255, 255, 255, 0.32);
+
 .card {
   &-wrapper {
     max-width: 266px;
+    padding: 5px;
     min-width: 240px;
     width: 100%;
     height: 400px;
@@ -14,6 +17,8 @@
   height: 100%;
   width: 100%;
   border-radius: 8px 8px 0 0;
+  border: 1px solid $color-border;
+  border-bottom: none;
 
   &-box {
     max-height: 200px;
@@ -21,9 +26,16 @@
   }
 }
 
+.card-wrapper:hover .card-image{
+  box-shadow: 0px 12px 64px rgba(255, 255, 255, 0.16);
+}
+
 
 .card-connection {
   &-inner {
+    border: 1px solid $color-border;
+    border-bottom: none;
+    width: 100%;
     background: rgba(4, 4, 32, 0.8);
     border-radius: 8px 8px 0 0;
     height: 100%;
@@ -60,11 +72,13 @@
 
 .card-info {
   &-inner {
+    border: 1px solid $color-border;
+    border-top: none;
     width: 100%;
     max-height: 140px;
     height: 100%;
     border-radius: 0 0 8px 8px;
-    background: #040420;
+    background-color: rgba(4, 4, 32, 0.32);
   }
 
   &-title {
@@ -89,6 +103,10 @@
     color: #FFFFFF;
     opacity: 0.64;
   }
+}
+
+.card-wrapper:hover .card-info-inner{
+  box-shadow: 0px 12px 64px rgba(255, 255, 255, 0.16);
 }
 
 .button{
