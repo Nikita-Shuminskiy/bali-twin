@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './JobsCard.module.scss'
 import { ButtonGame } from '../ButtonGame'
+import { Skill } from '../Skill/Skill'
 export const JobsCard = () => {
     const ArraySkillText = ['Design', 'Unreal', 'Photo', 'Develop']
     return (
@@ -25,22 +26,7 @@ export const JobsCard = () => {
                     </span>
                     <div className={styles['required-skills']}>
                         {ArraySkillText.map((skill, index) => {
-                            return (
-                                <div
-                                    key={index}
-                                    className={styles['required-skills-skill']}
-                                >
-                                    <span
-                                        className={
-                                            styles[
-                                                'required-skills-skill-title'
-                                            ]
-                                        }
-                                    >
-                                        {skill}
-                                    </span>
-                                </div>
-                            )
+                            return <Skill key={index} text={skill} />
                         })}
                     </div>
                 </div>

@@ -1,23 +1,91 @@
-.wrapper{
-    background: url("../../Images/backdrop-forest.jpg") no-repeat center;
-    position: relative;
-    background-size: cover;
-    padding-top: 80px;
-    min-height: 100vh;
-    &::before{
-        content: '';
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        background-color:rgba(4, 4, 20, 0.8);
-    }
+.wrapper {
+  background: url("../../Images/backdrop-forest.jpg") no-repeat center;
+  position: relative;
+  background-size: cover;
+  padding-top: 56px;
+  min-height: calc(100vh - 56px);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(4, 4, 20, 0.8);
+  }
 }
 
-.container{
+.container {
+  max-width: 1159px;
+  padding: 0 24px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.filter-container {
+  max-width: 825px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 56px;
+}
+
+.input-inner {
+  max-width: 761px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+  @media (max-width: 700px) {
+    margin-bottom: 24px;
+  }
+
+  .filter-button {
+    margin-left: 24px;
+    cursor: pointer;
+    position: relative;
+  }
+}
+
+.filter-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.jobs {
+
+  &-container {
+    max-width: 1159px;
+    height: 580px;
+    overflow-y: scroll;
+    margin: 0 auto;
+    padding: 0 20px;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &-container-scroll{
+    overflow: hidden;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    @media (max-width: 670px) {
+      justify-content: center
+    }
+  }
+
+  &-job-box {
+    padding-top: 20px;
+    margin-bottom: 64px;
+  }
 }
