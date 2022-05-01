@@ -14,11 +14,10 @@ const RoutMap = () => {
                 <CSSTransition
                     key={location.key}
                     classNames="fade"
-                    timeout={300}
+                    timeout={500}
                 >
                     <Routes location={location}>
                         {screens['AUTHORIZED'].map((path, index) => {
-                            console.log(path?.component)
                             return (
                                 <Route
                                     key={`${index} ${path?.path}`}

@@ -45,6 +45,7 @@ export const screens: { [key: string]: SitePathsType[] } = {
         allSitePaths.GAME,
         allSitePaths.COLLECTION,
         allSitePaths.JOBS,
+        allSitePaths.PLAY_GAME,
     ],
 }
 
