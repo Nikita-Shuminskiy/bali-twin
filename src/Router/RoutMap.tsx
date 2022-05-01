@@ -1,31 +1,35 @@
 import { AppHeader } from 'Pages/AppHeader/AppHeader'
 import React from 'react'
-import { Navigate, Route, Router, Routes } from 'react-router-dom'
-import 'swiper/scss'
-import 'swiper/scss/navigation'
-import 'swiper/scss/pagination'
-import { screens } from './PATH/PATH'
-import { GamePage } from '../Pages/GamePage/GamePage'
+import { Route, Routes, useLocation } from 'react-router-dom'
+import { CSSTransition, TransitionGroup } from 'react-transition-group'
+import { screens } from 'Router/PATH/PATH'
+import '../styles.css'
 
 const RoutMap = () => {
+    const location = useLocation()
     return (
         <>
             <AppHeader />
-            <Routes>
-                {screens['AUTHORIZED'].map((route, index) => {
-                    return (
-                        <Route
-                            key={index}
-                            path={route?.path}
-                            element={route?.component}
-                        />
-                    )
-                })}
-                <Route path={'/game'}>
-                    <Route path="play-game" element={<GamePage />} />
-                </Route>
-                <Route path="*" element={<Navigate to="/game" />} />
-            </Routes>
+            <TransitionGroup component={null}>
+                <CSSTransition
+                    key={location.key}
+                    classNames="fade"
+                    timeout={300}
+                >
+                    <Routes location={location}>
+                        {screens['AUTHORIZED'].map((path, index) => {
+                            console.log(path?.component)
+                            return (
+                                <Route
+                                    key={`${index} ${path?.path}`}
+                                    path={path?.path}
+                                    element={path?.component}
+                                />
+                            )
+                        })}
+                    </Routes>
+                </CSSTransition>
+            </TransitionGroup>
         </>
     )
 }
