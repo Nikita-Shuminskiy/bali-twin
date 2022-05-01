@@ -1,0 +1,66 @@
+.required-skills-normal {
+  &-skill {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 100px;
+    height: 28px;
+    width: max-content;
+    margin-right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+    z-index: 1;
+
+    &-title {
+      padding: 2px 8px;
+      font-family: 'Rubik';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: #FFFFFF;
+    }
+  }
+}
+
+.required-skills-filter {
+  &-skill {
+    height: 32px;
+    width: max-content;
+    margin-right: 8px;
+    display: inline-block;
+    margin-bottom: 12px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(24px);
+    border-radius: 100px;
+    z-index: 1;
+    cursor: pointer;
+
+    &:hover{
+      background: rgba(255, 255, 255, 0.16);
+    }
+
+    &-title {
+      display: block;
+      padding: 4px 12px;
+      font-family: 'Rubik';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: #FFFFFF;
+      opacity: 0.64;
+    }
+  }
+}
+
+.required-skills-filter-skill.active{
+    border: 1px solid #FFFFFF;
+}
+.required-skills-filter-skill.active .required-skills-filter-skill-title{
+  opacity: 1;
+}
+
+.required-skills-filter-skill:hover .required-skills-filter-skill-title{
+    opacity: 1;
+}
