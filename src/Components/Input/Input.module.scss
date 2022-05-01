@@ -1,0 +1,49 @@
+.wrapper {
+  max-width: 713px;
+  width: 100%;
+  position: relative;
+}
+
+.input {
+  width: 100%;
+  height: 22px;
+  border-radius: 100px;
+  padding: 10px 0 10px 16px;
+  background: rgba(4, 4, 32, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(32px);
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+
+  &::placeholder{
+    color: #FFFFFF;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &-button {
+    content: '';
+    position: absolute;
+    bottom: 50%;
+    right: 0;
+    z-index: 3;
+    width: 24px;
+    height: 24px;
+    opacity: 0.64;
+    cursor: pointer;
+    transform: translateY(50%);
+  }
+
+  &:focus {
+    outline: none;
+    outline-offset: 0;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+}
+
