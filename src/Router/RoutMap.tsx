@@ -7,6 +7,7 @@ import '../styles.css'
 
 const RoutMap = () => {
     const location = useLocation()
+    console.log('121')
     return (
         <>
             <AppHeader />
@@ -14,7 +15,7 @@ const RoutMap = () => {
                 <CSSTransition
                     key={location.key}
                     classNames="fade"
-                    timeout={500}
+                    timeout={5000}
                 >
                     <Routes location={location}>
                         {screens['AUTHORIZED'].map((path, index) => {
