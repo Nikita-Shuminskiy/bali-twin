@@ -1,0 +1,576 @@
+[33mcommit 31283cf6e7de501af3b9479c3bb5869fadea0e11[m[33m ([m[1;36mHEAD -> [m[1;32mnick[m[33m, [m[1;31morigin/nick[m[33m)[m
+Author: Nick <shuminskiy.nik@mail.ru>
+Date:   Sun May 1 20:19:52 2022 +0300
+
+    123
+
+[33mcommit d39e50542e9298f7af8bf7d87482b6763c7f4f25[m
+Author: Nick <shuminskiy.nik@mail.ru>
+Date:   Sun May 1 15:24:39 2022 +0300
+
+    fix link
+
+[33mcommit 62ecf1367293c37d0cee6f3ec442ae8352aae0a4[m
+Author: Nick <shuminskiy.nik@mail.ru>
+Date:   Sun May 1 15:01:24 2022 +0300
+
+    planned transitions between link
+
+[33mcommit 4a077aa5434179c979c08686624ab97543d52b38[m
+Merge: cad68a6 2a83d85
+Author: Nick <shuminskiy.nik@mail.ru>
+Date:   Sun May 1 13:18:36 2022 +0300
+
+    test
+
+[33mcommit 2a83d85cfe661c29fa4719eb4eb7a3fc4fd583eb[m
+Author: Nick <shuminskiy.nik@mail.ru>
+Date:   Sun May 1 13:17:21 2022 +0300
+
+    test
+
+[33mcommit 39d8743a371cb3d628494354bbdbda0dc4f0bb28[m
+Author: Nick <shuminskiy.nik@mail.ru>
+Date:   Sun May 1 13:17:02 2022 +0300
+
+    test
+
+[33mcommit cad68a6abc1733da7c29a7aa1e2121aa0739bda2[m
+Author: Nick <shuminskiy.nik@mail.ru>
+Date:   Tue Apr 19 21:20:35 2022 +0300
+
+    create a header and search(layout) for Jobs page
+
+[33mcommit 64d5f19af2cd3a24ca6ab4d4b27daaffe6fd1264[m
+Author: Nick <shuminskiy.nik@mail.ru>
+Date:   Thu Apr 7 20:59:34 2022 +0300
+
+    create page card-collections/create page-jobs
+
+[33mcommit d8cd2dd9bc4fbd4e0a5b93889d6aab9cfe4f0632[m
+Author: nick-gansta <shuminskiy.nik@mail.ru>
+Date:   Tue Apr 5 10:35:29 2022 +0300
+
+    refactoring project
+
+[33mcommit ac54b80bf474aa6b90c3c5f100d26dceab114835[m
+Author: nick-gansta <shuminskiy.nik@mail.ru>
+Date:   Mon Apr 4 21:07:32 2022 +0300
+
+    refactoring all ROUTES
+
+[33mcommit 50380172c12983eebb1b158d5c3b90ee4c497689[m
+Author: nick-gansta <shuminskiy.nik@mail.ru>
+Date:   Mon Apr 4 15:48:09 2022 +0300
+
+    fix bugs slider, fix menu burger, refactoring
+
+[33mcommit 388618e58db4fd7ea89042a95c7091b151239c2a[m
+Author: nick-gansta <shuminskiy.nik@mail.ru>
+Date:   Mon Apr 4 13:35:58 2022 +0300
+
+    fix route
+
+[33mcommit 3d393097c261e127aebe7e8def4d18afee9583b1[m
+Author: nick-gansta <shuminskiy.nik@mail.ru>
+Date:   Mon Apr 4 12:47:19 2022 +0300
+
+    fix package.json
+
+[33mcommit 41ffd41e7a748ccb26e903b8fa34b131ad37791d[m
+Author: nick-gansta <shuminskiy.nik@mail.ru>
+Date:   Mon Apr 4 12:44:09 2022 +0300
+
+    fix link in header
+
+[33mcommit 850c37417f1c3ec22be95fe7615ddeb6590b8ecc[m
+Author: nick-gansta <shuminskiy.nik@mail.ru>
+Date:   Mon Apr 4 12:36:59 2022 +0300
+
+    fix menu burger (link)
+
+[33mcommit 71d0d71dc0e960afad049596f7b2effdb71a98d5[m
+Author: philipp-moriss <filverem@gmail.com>
+Date:   Mon Apr 4 12:31:43 2022 +0300
+
+    fix: styles
+
+[33mcommit d6f33569757389b5cd079e375efe4114afa4603d[m
+Merge: d1c5498 bb9c370
+Author: philipp-moriss <filverem@gmail.com>
+Date:   Mon Apr 4 12:21:47 2022 +0300
+
+    Merge branch 'dev' of github.com:Nikita-Shuminskiy/bali-twin into dev
+
+[33mcommit d1c54982c840fabaee083ce8772edd6c28608ad5[m
+Author: philipp-moriss <filverem@gmail.com>
+Date:   Mon Apr 4 12:21:37 2022 +0300
+
+    fix : slider change to react slyk
+
+[33mcommit bb9c37093ef6b71c4b163022de036d023ef69774[m
+Author: nick-gansta <shuminskiy.nik@mail.ru>
+Date:   Mon Apr 4 12:20:10 2022 +0300
+
+    fix menu header (under line)
+
+[33mcommit c0b6f8f788286ca47dc7faa7af1a3c26b72a51d5[m
+Merge: a9e3c8d 2316591
+Author: nick-gansta <shuminskiy.nik@mail.ru>
+Date:   Mon Apr 4 11:19:45 2022 +0300
+
+    Merge branch 'nick' into dev
+
+[33mcommit 2316591b60ed3ef4e0584fa3bcac202f7836f68f[m
+Author: nick-gansta <shuminskiy.nik@mail.ru>
+Date:   Mon Apr 4 11:18:49 2022 +0300
+
+    fixed width from GamePage
+
+[33mcommit a9e3c8d9f09d1c641212299b6cd586a181783882[m
+Author: philipp-moriss <filverem@gmail.com>
+Date:   Mon Apr 4 11:14:43 2022 +0300
+
+    change git ignore
+
+[33mcommit 3273c82177954c1315a50cfe4f6e13db70ee2f2c[m[33m ([m[1;31morigin/swipe-slider[m[33m)[m
+Author: philipp-moriss <filverem@gmail.com>
+Date:   Mon Apr 4 11:12:45 2022 +0300
+
+    add buttons slider
+
+[33mcommit 8ce25e80ec8cad514d0901a7cb5c96ec92d4566a[m
+Author: nick-gansta <shuminskiy.nik@mail.ru>
+Date:   Sun Apr 3 22:30:32 2022 +0300
+
+    fix header link
+
+[33mcommit 801dd67e10d3f6f763f8854fedc04ed14078302a[m
+Author: philipp-moriss <filverem@gmail.com>
+Date:   Sun Apr 3 20:19:37 2022 +0300
+
+    fix styles
+
+[33mcommit b5be3878b2b0991aab0758d7ae580d9a245aa1e6[m
+Merge: 4cce838 30dad68
+Author: philipp-moriss <filverem@gmail.com>
+Date:   Sun Apr 3 20:16:16 2022 +0300
+
+    merge slider
+
+[33mcommit 30dad6896e342528a602c58cabef6222cf7f2a29[m
+Author: philipp-moriss <filverem@gmail.com>
+Date:   Sun Apr 3 20:13:13 2022 +0300
+
+    change reat slyk on swiper
+
+[33mcommit 4cce838652a40ffcb7a28ba82f4d64fdb875c0e7[m
+Author: nick-gansta <shuminskiy.nik@mail.ru>
+Date:   Sun Apr 3 19:38:48 2022 +0300
+
+    fix show screen. fixed menu, refactoring
+
+[33mcommit 938779210dc7bbac4f0d1cc6bfd572a5a0c0cfdc[m
+Author: nick-gansta <shuminskiy.nik@mail.ru>
+Date:   Sun Apr 3 18:33:43 2022 +0300
+
+    fix background gamePage
+
+[33mcommit 133f5c34b2c34f4057a914d8952fdc20be7f7716[m[33m ([m[1;31morigin/philipp-moriss[m[33m)[m
+Author: philipp-moriss <filverem@gmail.com>
+Date:   Sun Apr 3 15:27:33 2022 +0300
+
+    style slider
+
+[33mcommit c3cfb6ae2f1a1ea126397bd68fa0cd1dc45e02d5[m
+Author: philipp-moriss <filverem@gmail.com>
+Date:   Sun Apr 3 13:34:59 2022 +0300
+
+    fix style
+
+[33mcommit 6c8c9636389fe78b0ffb318a5b64f7378fa4b138[m
+Author: philipp-moriss <filverem@gmail.com>
+Date:   Sun Apr 3 13:19:20 2022 +0300
+
+    fix press on link
+
+[33mcommit 3f731f19a08dec7c079836795ea90aee50946aef[m
+Author: nick-gansta <shuminskiy.nik@mail.ru>
+Date:   Sun Apr 3 13:01:06 2022 +0300
+
+    fix link menu for burger menu
+
+[33mcommit c726467204b7285b90e01194d0a7a16ab616ce02[m
+Author: philipp-moriss <filverem@gmail.com>
+Date:   Sun Apr 3 10:49:01 2022 +0300
+
+    fix: refactor bugs in menu burger
+
+[33mcommit d71a1de2fb2d77853f39bbb9431fb800c67f420b[m
+Author: philipp-moriss <filverem@gmail.com>
+Date:   Sun Apr 3 10:34:05 2022 +0300
+
+    fix: change style
+
+[33mcommit 56eb9aef26c479eb3cb6f586a2f5108c822abed1[m
+Author: philipp-moriss <filverem@gmail.com>
+Date:   Sun Apr 3 10:30:18 2022 +0300
+
+    fix styles
+
+[33mcommit b26f0c18da02ec212908e84888346c29282aba4d[m
+Author: philipp-moriss <filverem@gmail.com>
+Date:   Sun Apr 3 10:23:58 2022 +0300
+
+    fix styles
+
+[33mcommit f2ecf49ddfd395576887c8d4e45b6b8b643032ef[m
+Author: nick-gansta <shuminskiy.nik@mail.ru>
+Date:   Sat Apr 2 23:30:37 2022 +0300
+
+    fix header
+
+[33mcommit 78be1be1f413e253caab3e14ed784b815e101d61[m
+Author: nick-gansta <shuminskiy.nik@mail.ru>
+Date:   Sat Apr 2 21:51:24 2022 +0300
+
+    fix media PlauGame btn
+
+[33mcommit f3c8b1039ed5faf2cc0175faa930d4eb73a68461[m
+Author: nick-gansta <shuminskiy.nik@mail.ru>
+Date:   Sat Apr 2 18:57:00 2022 +0300
+
+    refactoring
+
+[33mcommit 65b2c659d2ca31a693cba1a9d03b9e3df8cd8173[m
+Author: nick-gansta <shuminskiy.nik@mail.ru>
+Date:   Sat Apr 2 18:18:04 2022 +0300
+
+    fix
+
+[33mcommit f9218d91773a87f0095d442a26aacc34911b91b8[m
+Author: philipp-moriss <filverem@gmail.com>
+Date:   Sat Apr 2 18:00:41 2022 +0300
+
+    fix styles
+
+[33mcommit dcff67de50b7c554f01057ae6f9eaf4a42b84f3e[m
+Author: philipp-moriss <filverem@gmail.com>
+Date:   Sat Apr 2 17:36:16 2022 +0300
+
+    fix button play game style
+
+[33mcommit dc3da8e76ac85182771a7d8dae3d810725ad0e1e[m
+Merge: f57d92e b7ff107
+Author: philipp-moriss <filverem@gmail.com>
+Date:   Sat Apr 2 17:15:56 2022 +0300
+
+    merge
+
+[33mcommit b7ff107777ce25d81d4aaa15a21a10ac5a6e97fd[m
+Author: nick-gansta <shuminskiy.nik@mail.ru>
+Date:   Sat Apr 2 17:03:43 2022 +0300
+
+    fix logo-twin
+
+[33mcommit f57d92e8db372184ce5d733a21d4c1924d815382[m
+Author: philipp-moriss <filverem@gmail.com>
+Date:   Sat Apr 2 16:35:05 2022 +0300
+
+    fix: burger menu
+
+[33mcommit 6285e587285a973f0f10cf8c8c24d484c0ba7d13[m
+Author: philipp-moriss <filverem@gmail.com>
+Date:   Sat Apr 2 15:22:24 2022 +0300
+
+    fix : style
+
+[33mcommit 9bb2a667bc13cb9a6993eabb49f55322c4f436f4[m
+Author: nick-gansta <shuminskiy.nik@mail.ru>
+Date:   Sat Apr 2 15:13:11 2022 +0300
+
+    change active link for header
+
+[33mcommit 0ab32bbdc37bcd9c91775f645dd70305e3e48e07[m
+Author: philipp-moriss <filverem@gmail.com>
+Date:   Sat Apr 2 14:50:16 2022 +0300
+
+    fix: styles
+
+[33mcommit 01907a5bb61a7882de4a56a8c7f153cdbb6828bb[m
+Author: philipp-moriss <filverem@gmail.com>
+Date:   Sat Apr 2 14:15:12 2022 +0300
+
+    add: add PlayGameBtn
+
+[33mcommit 4b1ed041b5633def6c579e9ed465c11f56affa5f[m
+Merge: 3d972f3 4383431
+Author: philipp-moriss <filverem@gmail.com>
+Date:   Sat Apr 2 12:44:20 2022 +0300
+
+    Merge branch 'fix-bugs-moriss' into dev
+
+[33mcommit 3d972f3a7a11f4e264ad6020f9086c77ceb44999[m
+Merge: d31e8ce c4bd5f2
+Author: philipp-moriss <filverem@gmail.com>
+Date:   Sat Apr 2 12:42:00 2022 +0300
+
+    merge dev
+
+[33mcommit 438343185ea78bb99b305f73bf7f44c9cabd4ce8[m[33m ([m[1;31morigin/fix-bugs-moriss[m[33m)[m
+Author: philipp-moriss <filverem@gmail.com>
+Date:   Sat Apr 2 12:36:22 2022 +0300
+
+    fix: style btn and link
+
+[33mcommit d31e8ce26dadcf3461f6b294e2ddfb3926209460[m
+Author: nick-gansta <shuminskiy.nik@mail.ru>
+Date:   Sat Apr 2 12:34:14 2022 +0300
+
+    change background-img for home page, remove effect for background (pink, blue)
+
+[33mcommit c4bd5f21de6b0129ea03686da2c4d790ec528fdb[m
+Author: philipp-moriss <filverem@gmail.com>
+Date:   Fri Apr 1 15:46:09 2022 +0300
+
+    fix: background modal overflow
+
+[33mcommit 4f82bbbb853869838e9a7afa33f27b7860369074[m
+Author: nick-gansta <shuminskiy.nik@mail.ru>
+Date:   Fri Apr 1 14:35:37 2022 +0300
+
+    add:add component  loader
+
+[33mcommit fde12171ae34af01d6f550d6b946ab9a39b7cf4e[m
+Merge: 333783c 9af7a2d
+Author: nick-gansta <shuminskiy.nik@mail.ru>
+Date:   Fri Apr 1 13:55:55 2022 +0300
+
+    Merge remote-tracking branch 'origin/dev' into dev
+
+[33mcommit 333783c1dc2671da9ebce376403222b3872b0cf9[m
+Author: nick-gansta <shuminskiy.nik@mail.ru>
+Date:   Fri Apr 1 13:51:15 2022 +0300
+
+    fix closed menu for checked on link, fixed background for menu burger
+
+[33mcommit 9af7a2d1dbe7ac7b1efb07ef3eb62d521bb2b1b8[m
+Author: philipp-moriss <filverem@gmail.com>
+Date:   Fri Apr 1 13:19:02 2022 +0300
+
+    fix : pick menu style
+
+[33mcommit 465e5ce1156b822b3b75fe9386197b6859210997[m
+Merge: 46b8b21 def9841
+Author: philipp-moriss <filverem@gmail.com>
+Date:   Fri Apr 1 12:45:33 2022 +0300
+
+    merge
+
+[33mcommit 46b8b2163696df38725283ea70da6d9d812abf2b[m
+Author: philipp-moriss <filverem@gmail.com>
+Date:   Fri Apr 1 12:44:24 2022 +0300
+
+    add build dr
+
+[33mcommit cfdb0d3e49f9fc3b9efd1ddb2a93afccfe050c3b[m
+Author: philipp-moriss <filverem@gmail.com>
+Date:   Fri Apr 1 12:33:53 2022 +0300
+
+    fix: style header
+
+[33mcommit def9841c36c88e7ed901cff7cd4786d143383f2e[m
+Author: nick-gansta <shuminskiy.nik@mail.ru>
+Date:   Thu Mar 31 22:04:06 2022 +0300
+
+    refactoring burger style
+
+[33mcommit 971af37cf65e517718c97dffc9c8177ee74a15ee[m
+Author: nick-gansta <shuminskiy.nik@mail.ru>
+Date:   Thu Mar 31 20:50:59 2022 +0300
+
+    refactoring
+
+[33mcommit daf5713b2fe71a94115b2fec5f2023399f889b7b[m
+Author: nick-gansta <shuminskiy.nik@mail.ru>
+Date:   Thu Mar 31 20:49:23 2022 +0300
+
+    fix rout
+
+[33mcommit 512d11fd6cfa2b1d89410c4eb127c9f3b8e977df[m
+Author: nick-gansta <shuminskiy.nik@mail.ru>
+Date:   Thu Mar 31 20:23:12 2022 +0300
+
+    fix rout map
+
+[33mcommit d34ce470a386ff0dfe9139fb92905471d2bbfb56[m
+Author: nick-gansta <shuminskiy.nik@mail.ru>
+Date:   Thu Mar 31 20:20:04 2022 +0300
+
+    refactoring homePage
+
+[33mcommit 46d59b2238dac23ac5d6bde82ae5daf98c797580[m
+Merge: 145b19c d042bfd
+Author: nick-gansta <shuminskiy.nik@mail.ru>
+Date:   Thu Mar 31 19:23:07 2022 +0300
+
+    Merge remote-tracking branch 'origin/dev' into niki-shym
+
+[33mcommit 145b19c9c041efd3e40e1443382378f891163895[m
+Author: nick-gansta <shuminskiy.nik@mail.ru>
+Date:   Thu Mar 31 19:22:54 2022 +0300
+
+    refactoring homePage
+
+[33mcommit d042bfddec0409e7ba14c0f3a5ab1b154354b9c8[m
+Author: nick-gansta <shuminskiy.nik@mail.ru>
+Date:   Thu Mar 31 18:39:34 2022 +0300
+
+    refactoring
+
+[33mcommit 7c567f15afc179746e5505a3916642aad92e0a65[m
+Author: nick-gansta <shuminskiy.nik@mail.ru>
+Date:   Thu Mar 31 17:56:20 2022 +0300
+
+    refactoring
+
+[33mcommit 72efc855315e0b2d4fa6c6c85c3278c5aea3e061[m
+Author: nick-gansta <shuminskiy.nik@mail.ru>
+Date:   Thu Mar 31 16:49:27 2022 +0300
+
+    gh pages
+
+[33mcommit 801c79b97e86c893ee2543e0b63eda528909e143[m
+Author: philipp-moriss <filverem@gmail.com>
+Date:   Thu Mar 31 16:06:21 2022 +0300
+
+    fix header
+
+[33mcommit 65ae02d12fdcadbd9de648354736429160017c6b[m
+Merge: 440921a 6dbe8c6
+Author: philipp-moriss <filverem@gmail.com>
+Date:   Thu Mar 31 16:01:19 2022 +0300
+
+    fix conflict
+
+[33mcommit 440921a9b2ef2351869023c9ced020d72d6ae7ec[m
+Merge: 2da0007 52c49ae
+Author: philipp-moriss <filverem@gmail.com>
+Date:   Thu Mar 31 15:56:30 2022 +0300
+
+    Merge branch 'niki-shym' into dev
+
+[33mcommit 2da000734f95e8a890a098fb8bfff33da308493d[m
+Author: philipp-moriss <filverem@gmail.com>
+Date:   Thu Mar 31 15:52:33 2022 +0300
+
+    add : add deploy in gh-pages
+
+[33mcommit 6dbe8c6083f5777798923b9b3794946d72bc6834[m
+Author: nick-gansta <shuminskiy.nik@mail.ru>
+Date:   Thu Mar 31 15:52:30 2022 +0300
+
+    gh
+
+[33mcommit b859d893870725b23d50215a58d0789c63f6c3a4[m
+Author: nick-gansta <shuminskiy.nik@mail.ru>
+Date:   Thu Mar 31 15:51:27 2022 +0300
+
+    gh pages
+
+[33mcommit 52c49ae0f2af41324677596c8d782c8481ef799d[m
+Author: nick-gansta <shuminskiy.nik@mail.ru>
+Date:   Thu Mar 31 13:22:47 2022 +0300
+
+    changes link in menu gamburger, refactoring
+
+[33mcommit 7431f77602b583ba9f253adbf1de00fae33806d5[m
+Merge: 19254f0 140a32f
+Author: nick-gansta <shuminskiy.nik@mail.ru>
+Date:   Thu Mar 31 13:17:51 2022 +0300
+
+    Merge remote-tracking branch 'origin/dev' into dev
+    
+    # Conflicts:
+    #       src/Pages/AppHeader/AppHeader.module.scss
+
+[33mcommit 19254f04b1de39e35d8235ceb9ea3f2e05938dfe[m
+Author: nick-gansta <shuminskiy.nik@mail.ru>
+Date:   Thu Mar 31 13:16:47 2022 +0300
+
+    fix burger menu, create adaptive, refactoring
+
+[33mcommit 140a32f3de19b136742a045b2e6a874745865d5b[m
+Author: philipp-moriss <filverem@gmail.com>
+Date:   Thu Mar 31 11:21:50 2022 +0300
+
+    fix: menu change location
+
+[33mcommit de2f66a0dbbb3eb8382d1469fb7b30dd8d69ec79[m
+Author: philipp-moriss <filverem@gmail.com>
+Date:   Thu Mar 31 11:11:49 2022 +0300
+
+    fix style slider
+
+[33mcommit 870d0369cce601be5c074e5e3efdd1b39c03c88b[m
+Author: philipp-moriss <filverem@gmail.com>
+Date:   Wed Mar 30 22:38:13 2022 +0300
+
+    fix: fix folder component
+
+[33mcommit f01f09ef81e4fa952c3cfcd3c9bbf6c1b66caf2a[m
+Merge: 5fce001 87dbbe5
+Author: philipp-moriss <filverem@gmail.com>
+Date:   Wed Mar 30 22:33:58 2022 +0300
+
+    Merge branch 'philipp-moriss' into dev
+
+[33mcommit 87dbbe517f9e30c03d3cf05a03fe086a9f00d3bb[m
+Author: philipp-moriss <filverem@gmail.com>
+Date:   Wed Mar 30 22:32:45 2022 +0300
+
+    add: add modal and portal
+
+[33mcommit 5fce0015d9d4389e049b054d02b05491d279beb6[m
+Merge: 830afd2 64d4ba5
+Author: nick-gansta <shuminskiy.nik@mail.ru>
+Date:   Wed Mar 30 20:08:11 2022 +0300
+
+    Merge branch 'niki-shym' into dev
+
+[33mcommit 64d4ba59c6d6de75b261ef0f5950485da503aa8f[m
+Author: nick-gansta <shuminskiy.nik@mail.ru>
+Date:   Wed Mar 30 20:07:48 2022 +0300
+
+    fix burger menu
+
+[33mcommit 70000c6198f1231a31c4cdb50f90257f0b7af08f[m
+Author: nick-gansta <shuminskiy.nik@mail.ru>
+Date:   Wed Mar 30 19:49:10 2022 +0300
+
+    fix burger menu or in part development adaptive for HomePage and burgerMenu
+
+[33mcommit 830afd26f554d033ec57414134d417fb76767fdb[m
+Author: philipp-moriss <filverem@gmail.com>
+Date:   Wed Mar 30 18:14:23 2022 +0300
+
+    fix routing
+
+[33mcommit a3ebf7828414f74d2ef6b92f21b92179071ea15f[m
+Merge: 901e70a 34fb0ae
+Author: philipp-moriss <filverem@gmail.com>
+Date:   Wed Mar 30 18:07:05 2022 +0300
+
+    merge
+
+[33mcommit 34fb0ae6f340f20f7439e81cd3808e1e4647538e[m
+Author: philipp-moriss <filverem@gmail.com>
+Date:   Wed Mar 30 18:05:01 2022 +0300
+
+    fix : Router
+
+[33mcommit fd19f142247af5ae4465d5c9674a4d9c652fc09a[m
+Author: philipp-moriss <filverem@gmail.com>
+Date:   Wed Mar 30 17:53:25 2022 +0300
+
+    add: callback logik in cards
