@@ -11,25 +11,25 @@ const RoutMap = () => {
     return (
         <>
             <AppHeader />
-            <TransitionGroup component={null}>
+            {/* <TransitionGroup component={null}>
                 <CSSTransition
                     key={location.key}
                     classNames="fade"
                     timeout={5000}
-                >
-                    <Routes location={location}>
-                        {screens['AUTHORIZED'].map((path, index) => {
-                            return (
-                                <Route
-                                    key={`${index} ${path?.path}`}
-                                    path={path?.path}
-                                    element={path?.component}
-                                />
-                            )
-                        })}
-                    </Routes>
-                </CSSTransition>
-            </TransitionGroup>
+                > */}
+            <Routes location={location}>
+                {screens['AUTHORIZED'].map((path, index) => {
+                    return (
+                        <Route
+                            key={`${index} ${path?.path}`}
+                            path={path?.path}
+                            element={path?.component}
+                        />
+                    )
+                })}
+            </Routes>
+            {/* </CSSTransition>
+            </TransitionGroup> */}
         </>
     )
 }
